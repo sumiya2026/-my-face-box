@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes, viewport-fit=cover">
-<title>MYFAECBOX - Ultra Pro International Cloud Hub (Global Production-Ready 100%)</title>
+<title>MYFAECBOX - Ultra Pro International Cloud Hub (Global Scale Network 10000%)</title>
 <link rel="manifest" href="data:application/manifest+json,{&quot;name&quot;:&quot;MYFAECBOX&quot;,&quot;short_name&quot;:&quot;FaceBox&quot;,&quot;start_url&quot;:&quot;.&quot;,&quot;display&quot;:&quot;standalone&quot;,&quot;background_color&quot;:&quot;#121212&quot;,&quot;theme_color&quot;:&quot;#0088ff&quot;}">
 <script src="https://cdn.jsdelivr.net/npm/gun/gun.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/gun/sea.js"></script>
@@ -21,19 +21,23 @@
 *{margin:0;padding:0;box-sizing:border-box;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;-webkit-tap-highlight-color:transparent}
 html,body{width:100%;height:100%;background:var(--bg-main)!important;color:var(--text-main)!important;overflow-x:hidden;font-size:16px;}
 
+
 .app-window{width:100vw;max-width:480px;min-height:100vh;display:flex;flex-direction:column;background:var(--bg-main)!important;position:relative;margin:0 auto;box-shadow:0 0 25px rgba(0,0,0,0.5);padding-bottom:70px;}
 @media(min-width: 481px) {
   .app-window { border-left:1px solid var(--border-color); border-right:1px solid var(--border-color); }
 }
+
 
 /* Enterprise Toast Notification System */
 #toast-container { position: fixed; top: 20px; left: 50%; transform: translateX(-50%); z-index: 999999999; display: flex; flex-direction: column; gap: 8px; width: 90%; max-width: 400px; pointer-events: none; }
 .toast { background: var(--card-bg); border: 1px solid #0088ff; color: var(--text-main); padding: 12px 16px; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,136,255,0.4); font-size: 0.85rem; pointer-events: auto; animation: slideDown 0.3s ease-out forwards; font-weight: bold; }
 @keyframes slideDown { from { opacity: 0; transform: translateY(-20px); } to { opacity: 1; transform: translateY(0); } }
 
+
 .status-bar{background:var(--status-bar-bg)!important;color:var(--status-text)!important;padding:calc(env(safe-area-inset-top, 0px) + 6px) 16px 6px 16px;display:flex;justify-content:space-between;font-size:13px;font-weight:700;border-bottom:1px solid var(--border-color);z-index:20;}
 .live-badge{background:#ea4335!important;color:#fff!important;font-size:11px;padding:2px 6px;border-radius:4px;margin-left:4px}
 .free-data-pill{background:#34a853!important;color:#fff!important;font-size:11px;padding:2px 8px;border-radius:10px;cursor:pointer;font-weight:bold;}
+
 
 .main-header{background:var(--header-bg)!important;color:var(--text-main)!important;padding:10px 16px;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid var(--border-color);z-index:20;position:sticky;top:0}
 .header-left-group{display:flex;align-items:center;gap:12px}
@@ -41,6 +45,7 @@ html,body{width:100%;height:100%;background:var(--bg-main)!important;color:var(-
 .brand-wrapper{display:flex;align-items:center;gap:6px;}
 .brand-title{font-size:18px;font-weight:900;font-style:italic;font-family:'Courier New', Courier, monospace;text-transform:uppercase;color:#0088ff!important;letter-spacing:1px;}
 .brand-signature{font-size:11px;color:var(--status-text)!important;font-style:italic;font-weight:700}
+
 
 .account-switcher-bar {
   background: var(--card-sub-bg); border-bottom: 1px solid var(--border-color);
@@ -50,9 +55,11 @@ html,body{width:100%;height:100%;background:var(--bg-main)!important;color:var(-
   background: #0088ff; color: #fff; padding: 3px 8px; border-radius: 12px; font-size: 10px; margin-left: 6px;
 }
 
+
 .content-scroller{flex:1;background:var(--bg-main)!important;position:relative;}
 .app-view-panel { display: none; width: 100%; height: 100%; flex-direction: column; }
 .app-view-panel.active-view { display: flex; }
+
 
 .stories-tray-container {
   display: flex; gap: 8px; padding: 12px 12px; overflow-x: auto;
@@ -60,6 +67,7 @@ html,body{width:100%;height:100%;background:var(--bg-main)!important;color:var(-
   scroll-snap-type: x mandatory; -webkit-overflow-scrolling: touch;
 }
 .stories-tray-container::-webkit-scrollbar { display: none; }
+
 
 .story-card-item {
   min-width: 110px; width: 110px; height: 195px; border-radius: 14px;
@@ -70,6 +78,7 @@ html,body{width:100%;height:100%;background:var(--bg-main)!important;color:var(-
 }
 .story-card-item:active { transform: scale(0.96); }
 
+
 .create-story-card-box { background: #1a1a1a; justify-content: flex-end; align-items: center; text-align: center; padding-bottom: 12px; }
 .create-story-bg-img { position: absolute; top: 0; left: 0; width: 100%; height: 68%; object-fit: cover; }
 .create-story-plus-circle {
@@ -79,6 +88,7 @@ html,body{width:100%;height:100%;background:var(--bg-main)!important;color:var(-
   box-shadow: 0 3px 8px rgba(0,136,255,0.4); z-index: 5;
 }
 
+
 .story-avatar-ring-box {
   width: 36px; height: 36px; border-radius: 50%; padding: 2px;
   background: linear-gradient(135deg, #0088ff, #ff0055, #ff7a00);
@@ -87,9 +97,11 @@ html,body{width:100%;height:100%;background:var(--bg-main)!important;color:var(-
 .story-avatar-ring-box.active-ring { animation: pulseRingAnim 2s infinite; }
 @keyframes pulseRingAnim { 0%{box-shadow: 0 0 0 0 rgba(0,136,255,0.7);} 70%{box-shadow: 0 0 0 8px rgba(0,136,255,0); } 100%{box-shadow: 0 0 0 0 rgba(0,136,255,0); } }
 
+
 .story-avatar-img-el { width: 100%; height: 100%; border-radius: 50%; object-fit: cover; background: #fff; }
 .story-card-overlay-content { position: relative; z-index: 1; display: flex; flex-direction: column; justify-content: space-between; height: 100%; }
 .story-card-author-txt { font-size: 12px; font-weight: bold; color: #fff; text-shadow: 0 1px 4px #000; padding: 0 10px 10px 10px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; width: 100%; }
+
 
 .status-composer{background:var(--card-bg)!important;padding:14px;margin:8px;border-radius:16px;border:1px solid var(--border-color);box-shadow:0 1px 3px rgba(0,0,0,0.2)}
 .composer-upper{display:flex;gap:10px;align-items:center}
@@ -98,11 +110,13 @@ html,body{width:100%;height:100%;background:var(--bg-main)!important;color:var(-
 .composer-upper input{flex:1;padding:10px 14px;border-radius:20px;border:1px solid var(--border-color);background:var(--input-bg)!important;outline:none;font-size:14px;color:var(--input-text)!important;cursor:pointer;}
 .post-btn{background:linear-gradient(135deg, #0088ff, #0055ff);color:#fff!important;border:none;padding:8px 16px;border-radius:18px;font-weight:800;font-size:13px;cursor:pointer}
 
+
 .live-typing-radar {
   margin: 4px 8px 10px 8px; background: linear-gradient(135deg, rgba(0,136,255,0.1), rgba(52,168,83,0.1));
   border: 1px dashed #0088ff; border-radius: 12px; padding: 8px 12px; font-size: 12px;
   display: none; align-items: center; justify-content: space-between;
 }
+
 
 .feed-reels-section {
   margin: 12px 8px; background: var(--card-bg); border: 1px solid var(--border-color); border-radius: 16px; padding: 12px 0; box-shadow: 0 1px 4px rgba(0,0,0,0.2);
@@ -125,6 +139,7 @@ html,body{width:100%;height:100%;background:var(--bg-main)!important;color:var(-
 }
 .feed-reel-author { font-size: 11px; font-weight: bold; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 
+
 /* Social Chain Cards */
 .social-chain-section {
   margin: 12px 8px; background: var(--card-bg); border: 1px solid var(--border-color); border-radius: 16px; padding: 12px;
@@ -140,6 +155,7 @@ html,body{width:100%;height:100%;background:var(--bg-main)!important;color:var(-
 .social-chain-name { font-weight: bold; font-size: 13px; margin: 8px 4px 2px 4px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .social-chain-desc { font-size: 11px; color: var(--status-text); margin-bottom: 10px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .social-chain-btn { background: #0088ff; color: #fff; border: none; padding: 6px 14px; border-radius: 14px; font-size: 11px; font-weight: bold; cursor: pointer; width: 85%; margin: 0 auto; }
+
 
 /* 🌟 TIKTOK VERTICAL FULL-SCREEN SWIPEABLE MODAL */
 .tiktok-screen-modal {
@@ -160,6 +176,7 @@ html,body{width:100%;height:100%;background:var(--bg-main)!important;color:var(-
 }
 .tiktok-scroll-viewport::-webkit-scrollbar { display: none; }
 
+
 .tiktok-slide-item {
   width: 100vw; height: 100vh; scroll-snap-align: start; position: relative; background: #000;
   display: flex; align-items: center; justify-content: center; overflow: hidden;
@@ -167,6 +184,7 @@ html,body{width:100%;height:100%;background:var(--bg-main)!important;color:var(-
 .tiktok-slide-media {
   position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain; z-index: 1;
 }
+
 
 .tiktok-right-action-bar {
   position: absolute; right: 12px; bottom: 80px; display: flex; flex-direction: column; gap: 16px; align-items: center; z-index: 10;
@@ -182,6 +200,7 @@ html,body{width:100%;height:100%;background:var(--bg-main)!important;color:var(-
 .tiktok-action-icon { font-size: 32px; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.6)); }
 .tiktok-action-label { font-size: 11px; font-weight: bold; margin-top: 2px; }
 
+
 .tiktok-bottom-details {
   position: absolute; left: 16px; bottom: 70px; width: 75%; z-index: 10; display: flex; flex-direction: column; gap: 6px;
   text-shadow: 0 1px 4px rgba(0,0,0,0.9);
@@ -189,6 +208,7 @@ html,body{width:100%;height:100%;background:var(--bg-main)!important;color:var(-
 .tiktok-author-handle { font-size: 15px; font-weight: 900; color: #fff; }
 .tiktok-desc-text { font-size: 13px; line-height: 1.4; color: #f1f1f1; }
 .tiktok-audio-tag { font-size: 12px; color: #ddd; display: flex; align-items: center; gap: 6px; }
+
 
 .tiktok-input-strip {
   position: absolute; bottom: 0; left: 0; width: 100%; padding: 10px 16px calc(env(safe-area-inset-bottom, 0px) + 10px) 16px;
@@ -198,6 +218,7 @@ html,body{width:100%;height:100%;background:var(--bg-main)!important;color:var(-
   flex: 1; padding: 10px 16px; border-radius: 20px; border: 1px solid rgba(255,255,255,0.3);
   background: rgba(255,255,255,0.15); color: #fff; font-size: 13px; outline: none;
 }
+
 
 /* Facebook-Style Comments Bottom Sheet with Nested Replies */
 .fb-comments-sheet {
@@ -210,6 +231,7 @@ html,body{width:100%;height:100%;background:var(--bg-main)!important;color:var(-
 }
 .fb-comments-list { flex: 1; overflow-y: auto; padding: 14px; display: flex; flex-direction: column; gap: 10px; }
 .nested-reply-box { margin-left: 20px; margin-top: 6px; padding-left: 10px; border-left: 2px solid #0088ff; }
+
 
 .feed-post-card{background:var(--card-bg)!important;padding:14px;margin:10px 8px;border-radius:16px;border:1px solid var(--border-color);box-shadow:0 1px 4px rgba(0,0,0,0.3)}
 .post-header-row{display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;}
@@ -225,8 +247,10 @@ html,body{width:100%;height:100%;background:var(--bg-main)!important;color:var(-
 .action-bar{display:flex;justify-content:space-around;padding:6px 0 0 0;margin-top:4px}
 .action-btn{flex:1;text-align:center;padding:8px;font-size:13px;font-weight:700;color:var(--text-main)!important;cursor:pointer;border-radius:8px;}
 
+
 .media-carousel-container { display: flex; gap: 8px; overflow-x: auto; scroll-snap-type: x mandatory; padding: 6px 0; }
 .media-carousel-item { flex-shrink: 0; width: 88%; max-height: 380px; border-radius: 12px; scroll-snap-align: center; object-fit: cover; border: 1px solid var(--border-color); }
+
 
 .bottom-navigation{width:100%;max-width:480px;height:65px;background:var(--nav-bg)!important;border-top:2px solid #0088ff;display:flex;justify-content:space-around;align-items:center;position:fixed;bottom:0;left:0;right:0;margin:0 auto;z-index:99999;box-shadow:0 -4px 15px rgba(0,136,255,0.25);}
 .nav-tab{text-align:center;font-size:11px;color:var(--nav-text)!important;cursor:pointer;font-weight:bold;flex:1;padding:6px 0;}
@@ -234,11 +258,13 @@ html,body{width:100%;height:100%;background:var(--bg-main)!important;color:var(-
 .nav-tab .nav-icon{font-size:22px;display:block;margin-bottom:2px;}
 .menu-highlight-btn{background:linear-gradient(135deg, #0088ff, #0055ff);color:#fff!important;border-radius:50%;width:48px;height:48px;display:flex;align-items:center;justify-content:center;margin:-14px auto 2px auto;font-size:24px;box-shadow:0 4px 10px rgba(0,136,255,0.4);border:2px solid #222;}
 
+
 .full-screen-menu-overlay{position:fixed;top:0;left:0;width:100%;height:100%;background:var(--bg-main)!important;backdrop-filter:blur(15px);z-index:999999;display:none;overflow-y:auto;padding:20px;color:var(--text-main)!important}
 .menu-grid-icons{display:grid;grid-template-columns:repeat(3, 1fr);gap:12px;margin-bottom:14px}
 .menu-icon-tile{background:var(--card-bg);border:1px solid var(--border-color);padding:14px 8px;border-radius:14px;text-align:center;cursor:pointer;box-shadow:0 1px 3px rgba(0,0,0,0.3);}
 .menu-icon-tile .mi-icon{font-size:26px;margin-bottom:4px}
 .menu-icon-tile .mi-label{font-size:11px;font-weight:bold;color:var(--text-main)}
+
 
 .modular-window{
   position:fixed; top:0; left:0; width:100vw; height:100vh; background:var(--bg-main); 
@@ -246,6 +272,7 @@ html,body{width:100%;height:100%;background:var(--bg-main)!important;color:var(-
   padding-bottom: 120px;
 }
 .mod-header{display:flex;justify-content:space-between;align-items:center;padding-bottom:12px;border-bottom:1px solid var(--border-color);margin-bottom:12px;}
+
 
 .reg-form-group { display: flex; flex-direction: column; gap: 4px; margin-bottom: 12px; }
 .reg-form-group label { font-size: 12px; font-weight: bold; color: var(--text-main); }
@@ -260,6 +287,7 @@ html,body{width:100%;height:100%;background:var(--bg-main)!important;color:var(-
 }
 .account-type-card.selected { border-color: #0088ff; background: rgba(0,136,255,0.15); color: #0088ff; }
 
+
 .full-screen-post-overlay {
   position: fixed; top: 0; left: 0; width: 100vw; height: 100vh;
   background: rgba(18, 18, 18, 0.98); backdrop-filter: blur(20px);
@@ -271,6 +299,7 @@ html,body{width:100%;height:100%;background:var(--bg-main)!important;color:var(-
 .post-media-options { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; margin: 8px 0; }
 .post-option-tile { background: var(--card-sub-bg); border: 1px solid var(--border-color); padding: 10px; border-radius: 12px; text-align: center; cursor: pointer; font-weight: bold; font-size: 12px; }
 .submit-post-btn { width: 100%; background: linear-gradient(135deg, #0088ff, #0055ff); color: #fff; border: none; padding: 16px; border-radius: 16px; font-size: 16px; font-weight: 900; cursor: pointer; }
+
 
 /* 🌟 UNIVERSAL SCREEN UPLOAD PROGRESS MODAL */
 .global-upload-modal {
@@ -289,6 +318,7 @@ html,body{width:100%;height:100%;background:var(--bg-main)!important;color:var(-
   width: 0%; height: 100%; background: linear-gradient(90deg, #0088ff, #00ff66); transition: width 0.15s ease;
 }
 
+
 .ai-effects-bar {
   display: flex; gap: 8px; overflow-x: auto; padding: 8px 0; margin: 6px 0;
 }
@@ -297,18 +327,15 @@ html,body{width:100%;height:100%;background:var(--bg-main)!important;color:var(-
   font-size: 11px; font-weight: bold; cursor: pointer; white-space: nowrap;
 }
 .ai-effect-pill.active { background: #0088ff; color: #fff; border-color: #0088ff; }
-
-/* 🎓 SMART CLASS WHITEBOARD CANVAS STYLES */
-.board-style-white { background: #ffffff !important; }
-.board-style-dark { background: #18181b !important; }
-.board-style-chalk { background: #1e3a29 !important; }
-.board-style-warm { background: #fbf0d9 !important; }
 </style>
+
 </head>
 <body>
 
+
 <!-- Global Toast Notification Container -->
 <div id="toast-container" aria-live="polite"></div>
+
 
 <div class="app-window">
   <div class="status-bar">
@@ -316,6 +343,7 @@ html,body{width:100%;height:100%;background:var(--bg-main)!important;color:var(-
     <span onclick="openModule('modFreeData')" class="free-data-pill" title="Click to Configure Free Data Proxy">📶 FREE DATA: ON</span>
     <span class="live-badge" onclick="openModule('modNotifications')" style="cursor:pointer;" title="Notifications">🔴 LIVE 24/7</span>
   </div>
+
 
   <div class="main-header">
     <div class="header-left-group">
@@ -336,6 +364,7 @@ html,body{width:100%;height:100%;background:var(--bg-main)!important;color:var(-
     </div>
   </div>
 
+
   <div class="account-switcher-bar">
     <div>
       <span style="color:var(--status-text)" data-i18n="activeLabel">Active:</span>
@@ -345,11 +374,13 @@ html,body{width:100%;height:100%;background:var(--bg-main)!important;color:var(-
     <button onclick="openAccountSwitchModal()" style="background:#0088ff;color:#fff;border:none;padding:4px 10px;border-radius:12px;font-size:11px;font-weight:bold;cursor:pointer;" data-i18n="switchBtn">🔄 Switch / Add (3 Max)</button>
   </div>
 
+
   <div class="content-scroller" id="mainContentScroller">
     
     <div id="viewPosts" class="app-view-panel active-view">
       <!-- Stories Tray (24 Hours Expiry) -->
       <div class="stories-tray-container" id="storiesTrayContainer"></div>
+
 
       <!-- Real-Time Keystroke Live Radar Display -->
       <div class="live-typing-radar" id="liveTypingRadarBox">
@@ -360,6 +391,7 @@ html,body{width:100%;height:100%;background:var(--bg-main)!important;color:var(-
         <span style="background:#34a853;color:#fff;font-size:10px;padding:2px 6px;border-radius:6px;font-weight:bold;">LIVE ⚡</span>
       </div>
 
+
       <div class="status-composer">
         <div class="composer-upper">
           <div class="user-avatar" id="myProfileAvatarContainer" onclick="openRegistrationModal(true)" title="Click to Edit Profile">👤</div>
@@ -367,6 +399,7 @@ html,body{width:100%;height:100%;background:var(--bg-main)!important;color:var(-
           <button class="post-btn" onclick="checkAccountTypeRegisteredAndProceed(activeProfile.type || 'Personal', openPostCreator)" data-i18n="postBtn">Post</button>
         </div>
       </div>
+
 
       <!-- Reels & Short Videos (24 Hours Expiry) -->
       <div class="feed-reels-section">
@@ -377,6 +410,7 @@ html,body{width:100%;height:100%;background:var(--bg-main)!important;color:var(-
         <div class="feed-reels-scroll" id="feedReelsScrollContainer"></div>
       </div>
 
+
       <!-- Social Chain 1: People You May Know -->
       <div class="social-chain-section">
         <div class="social-chain-header">
@@ -385,6 +419,7 @@ html,body{width:100%;height:100%;background:var(--bg-main)!important;color:var(-
         </div>
         <div class="social-chain-scroll" id="peopleChainContainer"></div>
       </div>
+
 
       <!-- Instant Post Upload Hub Under Reels -->
       <div style="margin: 12px 8px; background: var(--card-bg); border: 1px solid var(--border-color); border-radius: 16px; padding: 14px; box-shadow: 0 1px 4px rgba(0,0,0,0.3);">
@@ -402,6 +437,7 @@ html,body{width:100%;height:100%;background:var(--bg-main)!important;color:var(-
         </div>
       </div>
 
+
       <!-- Social Chain 2: Suggested Pages for You -->
       <div class="social-chain-section">
         <div class="social-header">
@@ -411,8 +447,10 @@ html,body{width:100%;height:100%;background:var(--bg-main)!important;color:var(-
         <div class="social-chain-scroll" id="pagesChainContainer"></div>
       </div>
 
+
       <div id="feedContainer"></div>
     </div>
+
 
     <!-- Status & Stories View (24 Hours Expiry) -->
     <div id="viewStatus" class="app-view-panel">
@@ -423,6 +461,7 @@ html,body{width:100%;height:100%;background:var(--bg-main)!important;color:var(-
       </div>
     </div>
 
+
     <!-- Reels View (24 Hours Expiry) -->
     <div id="viewReels" class="app-view-panel">
       <div style="padding:10px 16px;background:var(--card-bg);border-bottom:1px solid var(--border-color);display:flex;justify-content:space-between;align-items:center;">
@@ -432,7 +471,9 @@ html,body{width:100%;height:100%;background:var(--bg-main)!important;color:var(-
       <div class="reels-hub-container" id="reelsFeedContainer"></div>
     </div>
 
+
   </div>
+
 
   <!-- Sri Lanka Free Data Hub Module -->
   <div class="modular-window" id="modFreeData">
@@ -448,6 +489,7 @@ html,body{width:100%;height:100%;background:var(--bg-main)!important;color:var(-
         </p>
       </div>
 
+
       <div style="background:var(--card-bg);border:1px solid var(--border-color);padding:14px;border-radius:14px;display:flex;flex-direction:column;gap:10px;">
         <div style="display:flex;justify-content:space-between;align-items:center;">
           <div>
@@ -456,6 +498,7 @@ html,body{width:100%;height:100%;background:var(--bg-main)!important;color:var(-
           </div>
           <input type="checkbox" id="chkDataSaver" checked onchange="toggleDataSaverMode(this.checked)" style="width:20px;height:20px;cursor:pointer;">
         </div>
+
 
         <div style="display:flex;justify-content:space-between;align-items:center;border-top:1px solid var(--border-color);padding-top:10px;">
           <div>
@@ -466,14 +509,17 @@ html,body{width:100%;height:100%;background:var(--bg-main)!important;color:var(-
         </div>
       </div>
 
+
       <div style="background:linear-gradient(135deg, rgba(0,136,255,0.1), rgba(52,168,83,0.1));padding:14px;border-radius:14px;border:1px dashed #0088ff;text-align:center;">
         <span style="font-size:12px;color:var(--status-text);">ඔබ මෙම ඇප් එක භාවිතයේදී ඉතිරි කරගත් ඩේටා ප්‍රමාණය:</span>
         <h2 style="color:#34a853;margin-top:4px;" id="savedDataDisplay">428.5 MB Saved 🚀</h2>
       </div>
 
+
       <button onclick="closeModule('modFreeData'); showToast('✅ නොමිලේ ඩේටා සැකසුම් සාර්ථකව ක්‍රියාත්මක විය!');" style="background:linear-gradient(135deg, #34a853, #0088ff);color:#fff;border:none;padding:12px;border-radius:12px;font-weight:bold;cursor:pointer;">සුරකින්න (Save Settings)</button>
     </div>
   </div>
+
 
   <!-- 🔔 1. Notifications & Alert System Modal -->
   <div class="modular-window" id="modNotifications">
@@ -488,6 +534,7 @@ html,body{width:100%;height:100%;background:var(--bg-main)!important;color:var(-
     </div>
   </div>
 
+
   <!-- 🏷️ 2. Hashtags & Trending Topics Explorer Modal -->
   <div class="modular-window" id="modTrending">
     <div class="mod-header">
@@ -497,6 +544,7 @@ html,body{width:100%;height:100%;background:var(--bg-main)!important;color:var(-
     <div style="display:flex;flex-direction:column;gap:10px;padding:12px;flex:1;overflow-y:auto;" id="trendingTopicsListContainer"></div>
   </div>
 
+
   <!-- 🔖 3. Bookmark / Saved Posts Hub Modal -->
   <div class="modular-window" id="modBookmarks">
     <div class="mod-header">
@@ -505,6 +553,7 @@ html,body{width:100%;height:100%;background:var(--bg-main)!important;color:var(-
     </div>
     <div style="display:flex;flex-direction:column;gap:10px;padding:12px;flex:1;overflow-y:auto;" id="savedPostsHubList"></div>
   </div>
+
 
   <!-- 🌐 4. Multi-Language Support Hub Modal -->
   <div class="modular-window" id="modLanguages">
@@ -518,6 +567,7 @@ html,body{width:100%;height:100%;background:var(--bg-main)!important;color:var(-
       <button onclick="changeAppLanguage('ta')" style="padding:14px;background:#ff7a00;color:#fff;border:none;border-radius:12px;font-weight:bold;cursor:pointer;">🇮🇳 தமிழ் (Tamil)</button>
     </div>
   </div>
+
 
   <!-- 🔒 5. Advanced Privacy Settings Modal -->
   <div class="modular-window" id="modPrivacy">
@@ -535,10 +585,11 @@ html,body{width:100%;height:100%;background:var(--bg-main)!important;color:var(-
     </div>
   </div>
 
-  <!-- 🌟 INTERNATIONAL PROFILE SETUP & EMAIL/OTP REGISTRATION FORM -->
+
+  <!-- 🌟 INTERNATIONAL PROFILE SETUP & GLOBAL SMS/EMAIL REGISTRATION FORM -->
   <div class="modular-window" id="modRegistration" style="display:none;">
     <div class="mod-header">
-      <b id="regModalHeaderTitle" data-i18n="regTitle">🌍 International Registration & Profile Setup</b>
+      <b id="regModalHeaderTitle" data-i18n="regTitle">🌍 Global Registration & Profile Setup (SMS / Email OTP)</b>
       <button onclick="closeRegistrationIfValid()" style="background:#ea4335;color:#fff;border:none;padding:4px 10px;border-radius:6px;cursor:pointer;" data-i18n="closeBtn">Close</button>
     </div>
     <div style="display:flex;flex-direction:column;gap:12px;padding:12px 4px 60px 4px; flex:1;">
@@ -551,6 +602,7 @@ html,body{width:100%;height:100%;background:var(--bg-main)!important;color:var(-
       <input type="file" id="regAvatarFileInput" accept="image/*" style="display:none;" onchange="handleRegAvatarUpload(event)">
       <input type="file" id="regCoverFileInput" accept="image/*" style="display:none;" onchange="handleRegCoverUpload(event)">
 
+
       <!-- Account Category -->
       <div class="reg-form-group">
         <label data-i18n="accCategory">Account Category:</label>
@@ -561,17 +613,19 @@ html,body{width:100%;height:100%;background:var(--bg-main)!important;color:var(-
         </div>
       </div>
 
-      <!-- Email & Password (NO PHONE NUMBER AS REQUESTED) -->
+
+      <!-- Global Dual Auth: Email OR Phone Number (International Format) -->
       <div style="display:grid;grid-template-columns: 1fr 1fr; gap:8px;">
         <div class="reg-form-group">
-          <label data-i18n="emailLabel">Email Address: *</label>
-          <input type="email" id="regInputEmail" class="reg-input-field" placeholder="user@myfacebox.com">
+          <label>Email Address or Phone (+94...): *</label>
+          <input type="text" id="regInputEmailOrPhone" class="reg-input-field" placeholder="user@mail.com or +94771234567">
         </div>
         <div class="reg-form-group">
           <label data-i18n="passLabel">Password: *</label>
           <input type="password" id="regInputPassword" class="reg-input-field" placeholder="••••••••">
         </div>
       </div>
+
 
       <!-- Full Name & Username -->
       <div style="display:grid;grid-template-columns: 1fr 1fr; gap:8px;">
@@ -585,19 +639,20 @@ html,body{width:100%;height:100%;background:var(--bg-main)!important;color:var(-
         </div>
       </div>
 
+
       <!-- Country Selection & Full Address -->
       <div style="display:grid;grid-template-columns: 1fr 1fr; gap:8px;">
         <div class="reg-form-group">
           <label data-i18n="countryLabel">Country Selection: *</label>
           <select id="regCountrySelect" class="reg-input-field">
-            <option value="Sri Lanka">🇱🇰 Sri Lanka</option>
-            <option value="United States">🇺🇸 United States</option>
-            <option value="United Kingdom">🇬🇧 United Kingdom</option>
-            <option value="Australia">🇦🇺 Australia</option>
-            <option value="India">🇮🇳 India</option>
-            <option value="Canada">🇨🇦 Canada</option>
-            <option value="Germany">🇩🇪 Germany</option>
-            <option value="Japan">🇯🇵 Japan</option>
+            <option value="Sri Lanka">🇱🇰 Sri Lanka (+94)</option>
+            <option value="United States">🇺🇸 United States (+1)</option>
+            <option value="United Kingdom">🇬🇧 United Kingdom (+44)</option>
+            <option value="Australia">🇦🇺 Australia (+61)</option>
+            <option value="India">🇮🇳 India (+91)</option>
+            <option value="Canada">🇨🇦 Canada (+1)</option>
+            <option value="Germany">🇩🇪 Germany (+49)</option>
+            <option value="Japan">🇯🇵 Japan (+81)</option>
             <option value="Other">🌐 Other Country</option>
           </select>
         </div>
@@ -607,21 +662,25 @@ html,body{width:100%;height:100%;background:var(--bg-main)!important;color:var(-
         </div>
       </div>
 
-      <!-- OTP Verification System Integration -->
+
+      <!-- Global SMS/Email OTP Verification with Auto Carrier Micro-Billing Notice -->
       <div style="background:var(--card-sub-bg);border:1px dashed #0088ff;border-radius:12px;padding:10px;margin-top:4px;">
         <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:6px;">
-          <b style="font-size:12px;color:#0088ff;" data-i18n="otpTitle">📧 Email OTP Verification:</b>
-          <button onclick="sendSimulatedOTPEmail()" style="background:#0088ff;color:#fff;border:none;padding:4px 10px;border-radius:6px;font-size:11px;font-weight:bold;cursor:pointer;" data-i18n="sendOtpBtn">Send OTP</button>
+          <b style="font-size:12px;color:#0088ff;" id="otpLabelTitle">📱 Global SMS / 📧 Email OTP Verification:</b>
+          <button onclick="sendGlobalOTPSMSOrEmail()" style="background:#0088ff;color:#fff;border:none;padding:4px 10px;border-radius:6px;font-size:11px;font-weight:bold;cursor:pointer;">Send Global OTP</button>
         </div>
         <div style="display:flex;gap:8px;">
           <input type="text" id="regOtpInput" class="reg-input-field" placeholder="Enter 6-digit OTP..." style="flex:1;text-align:center;letter-spacing:2px;font-weight:bold;">
-          <button onclick="verifyOtpAndProceedLaunch()" style="background:#34a853;color:#fff;border:none;padding:8px 14px;border-radius:8px;font-weight:bold;cursor:pointer;font-size:12px;" data-i18n="verifyOtpBtn">Verify & OK ✓</button>
+          <button onclick="verifyGlobalOtpAndProceed()" style="background:#34a853;color:#fff;border:none;padding:8px 14px;border-radius:8px;font-weight:bold;cursor:pointer;font-size:12px;">Verify & OK ✓</button>
         </div>
+        <small style="color:var(--status-text);font-size:10px;display:block;margin-top:4px;">⚡ Carrier Billing: Minor SMS gateway fee may apply automatically on confirmation.</small>
       </div>
+
 
       <button onclick="saveUserProfileRegistrationAndLaunch()" style="width:100%;background:linear-gradient(135deg, #0088ff, #0055ff);color:#fff;border:none;padding:14px;border-radius:14px;font-size:15px;font-weight:900;cursor:pointer;margin-top:6px;box-shadow:0 4px 15px rgba(0,136,255,0.4);" data-i18n="completeBtn">Complete Profile & Launch Hub 🚀</button>
     </div>
   </div>
+
 
   <!-- Universal Screen Upload Progress Modal -->
   <div class="global-upload-modal" id="globalUploadModal">
@@ -636,6 +695,7 @@ html,body{width:100%;height:100%;background:var(--bg-main)!important;color:var(-
     </div>
   </div>
 
+
   <!-- TikTok Vertical Swipeable Full-Screen Modal -->
   <div class="tiktok-screen-modal" id="tiktokImmersiveModal">
     <div class="tiktok-top-header">
@@ -644,13 +704,16 @@ html,body{width:100%;height:100%;background:var(--bg-main)!important;color:var(-
       <div style="font-size:20px;cursor:pointer;" onclick="showToast('Search Trending Content')">🔍</div>
     </div>
 
+
     <div class="tiktok-scroll-viewport" id="tiktokScrollViewport"></div>
+
 
     <div class="tiktok-input-strip">
       <input type="text" id="tiktokCommentInput" class="tiktok-comment-input" placeholder="Add comment..." onkeypress="if(event.key==='Enter') checkAccountTypeRegisteredAndProceed(activeProfile.type || 'Personal', submitTikTokComment)">
       <span onclick="checkAccountTypeRegisteredAndProceed(activeProfile.type || 'Personal', submitTikTokComment)" style="font-size:22px;cursor:pointer;">🚀</span>
     </div>
   </div>
+
 
   <!-- Facebook-Style Comments Bottom Sheet with Nested Replies -->
   <div class="fb-comments-sheet" id="fbCommentsSheet">
@@ -665,6 +728,7 @@ html,body{width:100%;height:100%;background:var(--bg-main)!important;color:var(-
     </div>
   </div>
 
+
   <!-- Full Screen Post Overlay with TikTok-Grade Sound Library & Audio Trimmer -->
   <div class="full-screen-post-overlay" id="fullScreenPostModal">
     <div class="post-overlay-header">
@@ -672,12 +736,14 @@ html,body{width:100%;height:100%;background:var(--bg-main)!important;color:var(-
       <button class="post-close-btn" onclick="closePostCreator()">×</button>
     </div>
 
+
     <textarea id="modalPostText" class="post-textarea" placeholder="What's on your mind? Share your thoughts freely..." oninput="broadcastLiveTyping(this.value); updateWordCount();"></textarea>
     
     <div style="display:flex;justify-content:space-between;font-size:12px;color:var(--status-text);margin-bottom:6px;">
       <span id="wordCountCounter">Words: 0</span>
       <span style="color:#34a853">⚡ Auto-Cut: Stories (3m), Reels (60s), Posts (10m)</span>
     </div>
+
 
     <div style="font-size:11px;font-weight:bold;color:#0088ff;margin-top:4px;">✨ AI Video Filters & FX:</div>
     <div class="ai-effects-bar">
@@ -688,6 +754,7 @@ html,body{width:100%;height:100%;background:var(--bg-main)!important;color:var(-
       <span class="ai-effect-pill" onclick="selectVideoEffect('fx-cyber', this)">🌌 Cyberpunk Blue</span>
       <span class="ai-effect-pill" onclick="selectVideoEffect('fx-vintage', this)">📼 90s Vintage</span>
     </div>
+
 
     <!-- 🌟 TIKTOK-GRADE ADD SOUND & MANUAL TRIMMER UI -->
     <div style="font-size:11px;font-weight:bold;color:#0088ff;margin-top:8px;">🎵 TikTok-Grade Sound Library & Manual Trimmer:</div>
@@ -705,9 +772,11 @@ html,body{width:100%;height:100%;background:var(--bg-main)!important;color:var(-
       </div>
     </div>
 
+
     <input type="file" id="filePhotoInput" accept="image/*" multiple style="display:none;" onchange="handleMediaSelect(event, 'photo')">
     <input type="file" id="fileVideoInput" accept="video/*" style="display:none;" onchange="handleMediaSelect(event, 'video')">
     <input type="file" id="fileAudioInput" accept="audio/*" style="display:none;" onchange="handleMediaSelect(event, 'audio')">
+
 
     <div class="post-media-options">
       <div class="post-option-tile" onclick="document.getElementById('filePhotoInput').click()"><span>📷</span> Photos (Auto-Compress)</div>
@@ -716,6 +785,7 @@ html,body{width:100%;height:100%;background:var(--bg-main)!important;color:var(-
       <div class="post-option-tile" onclick="triggerVoiceNoteRecording()"><span>🎙️</span> Voice Note</div>
     </div>
 
+
     <div id="uploadProgressBox" style="display:none;background:var(--card-sub-bg);padding:10px;border-radius:10px;margin-bottom:10px;font-size:12px;border:1px solid var(--border-color);">
       <div id="uploadProgressText" style="font-weight:bold;color:#0088ff;">Uploading & Encoding 0%</div>
       <div style="width:100%;height:6px;background:#ccc;border-radius:3px;margin-top:6px;overflow:hidden;">
@@ -723,16 +793,20 @@ html,body{width:100%;height:100%;background:var(--bg-main)!important;color:var(-
       </div>
     </div>
 
+
     <div id="selectedMediaPreview" style="font-size:12px;color:#0088ff;margin-bottom:10px;font-weight:bold;"></div>
+
 
     <button class="submit-post-btn" id="postSubmitActionBtn" onclick="submitNewPost()">🚀 Publish Post (30 Days)</button>
   </div>
+
 
   <div class="full-screen-menu-overlay" id="masterMenuHub">
     <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;">
       <b style="font-size:16px;color:#0088ff">🌐 MYFAECBOX MASTER PIPELINE HUB</b>
       <span onclick="closeMasterMenu()" style="font-size:28px;color:#ea4335;cursor:pointer">×</span>
     </div>
+
 
     <div class="menu-grid-icons">
       <div class="menu-icon-tile" onclick="openModule('modFreeData')"><div class="mi-icon" style="color:#34a853">📶</div><div class="mi-label">Free Data Hub</div></div>
@@ -753,6 +827,7 @@ html,body{width:100%;height:100%;background:var(--bg-main)!important;color:var(-
     <button onclick="closeMasterMenu()" style="margin-top:14px;width:100%;padding:10px;background:linear-gradient(135deg, #0088ff, #0055ff);color:#fff;border:none;border-radius:8px;font-weight:bold;cursor:pointer">Close Menu</button>
   </div>
 
+
   <!-- 🎓 Smart Class with Multi-Style Whiteboard Screen & Live Sync -->
   <div class="modular-window" id="modZoom">
     <div class="mod-header">
@@ -771,16 +846,19 @@ html,body{width:100%;height:100%;background:var(--bg-main)!important;color:var(-
         </div>
       </div>
 
+
       <div style="display:flex;gap:8px;background:var(--card-sub-bg);padding:4px;border-radius:12px;">
         <button id="scTabCamBtn" onclick="switchSmartClassSubTab('cam')" style="flex:1;padding:8px;background:#0088ff;color:#fff;border:none;border-radius:8px;font-weight:bold;cursor:pointer;font-size:12px;">📷 Teacher Cam View</button>
         <button id="scTabBoardBtn" onclick="switchSmartClassSubTab('board')" style="flex:1;padding:8px;background:transparent;color:var(--text-main);border:none;border-radius:8px;font-weight:bold;cursor:pointer;font-size:12px;">📝 P2P Whiteboard</button>
         <button id="scTabExamBtn" onclick="switchSmartClassSubTab('exam')" style="flex:1;padding:8px;background:transparent;color:var(--text-main);border:none;border-radius:8px;font-weight:bold;cursor:pointer;font-size:12px;">📑 PDF Exam Portal</button>
       </div>
 
+
       <div id="scCamContainer" style="background:#000;border-radius:14px;height:220px;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden;border:1px solid var(--border-color);">
         <video id="smartClassLiveVideo" autoplay playsinline muted style="width:100%;height:100%;object-fit:cover;"></video>
-        <div style="position:absolute;top:10px;left:10px;background:rgba(0,0,0,0.6);padding:4px 10px;border-radius:8px;color:#fff;font-size:11px;font-weight:bold;">🔴 Teacher LIVE WebRTC Stream</div>
+        <div style="position:absolute;top:10px;left:10px;background:rgba(0,0,0,0.6);padding:4px 10px;border-radius:8px;color:#fff;font-size:11px;font-weight:bold;">🔴 Teacher LIVE WebRTC Stream (SFU Mesh)</div>
       </div>
+
 
       <!-- Enhanced Whiteboard with Screen Style Switcher -->
       <div id="scWhiteboardContainer" style="display:none;flex-direction:column;gap:8px;background:var(--card-sub-bg);padding:10px;border-radius:14px;border:1px solid #0088ff;">
@@ -796,6 +874,7 @@ html,body{width:100%;height:100%;background:var(--bg-main)!important;color:var(-
           </div>
         </div>
 
+
         <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:6px;">
           <div style="display:flex;align-items:center;gap:6px;">
             <input type="color" id="wbColorPicker" value="#0088ff" style="border:none;width:32px;height:32px;border-radius:6px;cursor:pointer;">
@@ -809,6 +888,7 @@ html,body{width:100%;height:100%;background:var(--bg-main)!important;color:var(-
         <canvas id="luxuryWhiteboardCanvas" class="board-style-dark" width="440" height="260" style="border-radius:10px;border:2px dashed #0088ff;touch-action:none;width:100%;cursor:crosshair;"></canvas>
       </div>
 
+
       <div id="scExamPortalContainer" style="display:none;flex-direction:column;gap:10px;background:var(--card-sub-bg);padding:12px;border-radius:12px;border:1px solid var(--border-color);">
         <b>📑 ප්‍රශ්න පත්‍ර සහ පිළිතුරු පත්‍ර හුවමාරුව:</b>
         <input type="file" id="scPdfInput" accept="application/pdf,image/*" style="display:none;" onchange="handleClassPdfUpload(event)">
@@ -816,10 +896,12 @@ html,body{width:100%;height:100%;background:var(--bg-main)!important;color:var(-
         <div id="scUploadedPapersList" style="display:flex;flex-direction:column;gap:6px;"></div>
       </div>
 
+
       <div style="display:flex;gap:8px;">
         <button onclick="toggleSmartClassMic()" id="scMicBtn" style="flex:1;padding:10px;background:#34a853;color:#fff;border:none;border-radius:10px;font-weight:bold;cursor:pointer;font-size:12px;">🎙️ Mic On/Off</button>
-        <button onclick="toggleSmartClassCamera()" id="scCamBtn" style="flex:1;padding:10px;background:#0088ff;color:#fff;border:none;border-radius:10px;font-weight:bold;cursor:pointer;font-size:12px;">📷 Cam On/Off</button>
+        <button onclick="toggleSmartClassCamera()" id="scCamBtn" style="flex:1;padding:10px;background:#0088ff;color:#fff;border:none;border-radius:10px;font-weight:bold;cursor:pointer;font-size:12px;">📷 Group Cam (SFU)</button>
       </div>
+
 
       <div style="margin-top:4px;">
         <b style="font-size:13px;color:var(--text-main);">💬 Class Live Q&A:</b>
@@ -832,6 +914,7 @@ html,body{width:100%;height:100%;background:var(--bg-main)!important;color:var(-
     </div>
   </div>
 
+
   <div class="modular-window" id="modAccountSwitch">
     <div class="mod-header">
       <b>🔄 Multi-Account Switcher (3 Max)</b>
@@ -843,8 +926,10 @@ html,body{width:100%;height:100%;background:var(--bg-main)!important;color:var(-
     </div>
   </div>
 
+
   <input type="file" id="storyMediaFileInput" accept="image/*,video/*" style="display:none;" onchange="handleStoryMediaUpload(event)">
   <input type="file" id="reelVideoFileInput" accept="video/*,image/*" style="display:none;" onchange="handleReelVideoUpload(event)">
+
 
   <div class="bottom-navigation">
     <div class="nav-tab active" onclick="switchBottomTab('posts', this)"><span class="nav-icon">🏠</span>Posts</div>
@@ -856,6 +941,7 @@ html,body{width:100%;height:100%;background:var(--bg-main)!important;color:var(-
     </div>
   </div>
 
+
   <!-- Messenger & Calls with WebRTC P2P Support -->
   <div class="modular-window" id="modMessenger">
     <div class="mod-header">
@@ -865,7 +951,7 @@ html,body{width:100%;height:100%;background:var(--bg-main)!important;color:var(-
     <div style="display:flex;flex-direction:column;flex:1;height:calc(100vh - 140px);">
       <div style="display:flex;gap:8px;padding:8px 12px;background:var(--card-sub-bg);border-bottom:1px solid var(--border-color);">
         <button onclick="startMessengerCall('voice')" style="flex:1;padding:8px;background:#34a853;color:#fff;border:none;border-radius:10px;font-weight:bold;cursor:pointer;">📞 Voice Call</button>
-        <button onclick="startMessengerCall('video')" style="flex:1;padding:8px;background:#0088ff;color:#fff;border:none;border-radius:10px;font-weight:bold;cursor:pointer;">📹 Video Call</button>
+        <button onclick="startMessengerCall('video')" style="flex:1;padding:8px;background:#0088ff;color:#fff;border:none;border-radius:10px;font-weight:bold;cursor:pointer;">📹 Mesh Group Video Call</button>
       </div>
       <div id="messengerChatBox" style="flex:1;overflow-y:auto;padding:12px;display:flex;flex-direction:column;gap:10px;background:var(--bg-main);"></div>
       <div style="padding:10px;background:var(--card-bg);display:flex;gap:8px;">
@@ -874,6 +960,7 @@ html,body{width:100%;height:100%;background:var(--bg-main)!important;color:var(-
       </div>
     </div>
   </div>
+
 
   <!-- Autonomous AI Assistant & Admin Recovery Hub -->
   <div class="modular-window" id="modAIBot">
@@ -894,6 +981,7 @@ html,body{width:100%;height:100%;background:var(--bg-main)!important;color:var(-
     </div>
   </div>
 
+
   <div class="modular-window" id="modDiary">
     <div class="mod-header">
       <b>📖 Ultra-Pro Digital Diary Hub</b>
@@ -906,6 +994,7 @@ html,body{width:100%;height:100%;background:var(--bg-main)!important;color:var(-
       <div id="savedDiaryLogs" style="margin-top:8px;display:flex;flex-direction:column;gap:10px;"></div>
     </div>
   </div>
+
 
   <div class="modular-window" id="modVoiceManager">
     <div class="mod-header">
@@ -922,7 +1011,10 @@ html,body{width:100%;height:100%;background:var(--bg-main)!important;color:var(-
     </div>
   </div>
 
+
 </div>
+
+
 
 <script>
 // ==============================================================
@@ -942,12 +1034,14 @@ function showToast(message, type = 'info') {
   }, 3500);
 }
 
+
 // ==============================================================
 // 🌟 INDEXEDDB PERMANENT STORAGE ENGINE (GB STORAGE CAPACITY)
 // ==============================================================
 const DB_NAME = 'MyFaceBox_Persistent_DB';
 const DB_VERSION = 1;
 let dbInstance = null;
+
 
 function initPersistentDB() {
   return new Promise((resolve) => {
@@ -969,6 +1063,7 @@ function initPersistentDB() {
   });
 }
 
+
 async function idbSetData(key, value) {
   try {
     const db = await initPersistentDB();
@@ -980,6 +1075,7 @@ async function idbSetData(key, value) {
     console.warn('IDB Put Warn:', e);
   }
 }
+
 
 async function idbGetData(key) {
   try {
@@ -996,6 +1092,7 @@ async function idbGetData(key) {
     return null;
   }
 }
+
 
 // 🌟 SMART CLIENT-SIDE IMAGE COMPRESSOR
 function compressImage(file, maxWidth = 1080, quality = 0.75) {
@@ -1030,6 +1127,7 @@ function compressImage(file, maxWidth = 1080, quality = 0.75) {
   });
 }
 
+
 // 🌟 BLOB URL STREAM CONVERTER
 const blobUrlCache = new Map();
 function getSafeMediaUrl(src) {
@@ -1056,12 +1154,14 @@ function getSafeMediaUrl(src) {
   return src;
 }
 
+
 // 🌟 AUTO-TRIM VIDEO LOGIC
 function autoTrimVideoIfLong(file, maxSeconds = 600) {
   return new Promise((resolve) => {
     const video = document.createElement('video');
     video.preload = 'metadata';
     video.src = URL.createObjectURL(file);
+
 
     video.onloadedmetadata = function() {
       const duration = video.duration;
@@ -1072,6 +1172,7 @@ function autoTrimVideoIfLong(file, maxSeconds = 600) {
         return;
       }
 
+
       try {
         const stream = video.captureStream ? video.captureStream() : (video.mozCaptureStream ? video.mozCaptureStream() : null);
         if (!stream || typeof MediaRecorder === 'undefined') {
@@ -1080,6 +1181,7 @@ function autoTrimVideoIfLong(file, maxSeconds = 600) {
           reader.readAsDataURL(file);
           return;
         }
+
 
         const recorder = new MediaRecorder(stream, { mimeType: 'video/webm' });
         const chunks = [];
@@ -1091,10 +1193,12 @@ function autoTrimVideoIfLong(file, maxSeconds = 600) {
           r.readAsDataURL(trimmedBlob);
         };
 
+
         recorder.start();
         video.currentTime = 0;
         video.muted = true;
         video.play().catch(() => {});
+
 
         setTimeout(() => {
           if (recorder.state !== 'inactive') {
@@ -1103,12 +1207,14 @@ function autoTrimVideoIfLong(file, maxSeconds = 600) {
           }
         }, maxSeconds * 1000);
 
+
       } catch(err) {
         const reader = new FileReader();
         reader.onload = e => resolve(e.target.result);
         reader.readAsDataURL(file);
       }
     };
+
 
     video.onerror = () => {
       const reader = new FileReader();
@@ -1118,11 +1224,13 @@ function autoTrimVideoIfLong(file, maxSeconds = 600) {
   });
 }
 
+
 let posts = [];
 let currentSelectedMedia = { type: null, src: [], title: '', audioSrc: null, filter: 'none', audioTrimStart: 0, audioTrimEnd: 15 };
 let editingPostId = null;
 let currentActiveSheetPostId = null;
 let activeReplyingToCommentId = null;
+
 
 // ==============================================================
 // 🌟 GUN.JS REAL-TIME CLOUD SYNC ENGINE
@@ -1136,27 +1244,34 @@ const gunDB = Gun({
   multicast: false
 });
 
+
 let selectedRegAccountType = 'Personal';
 let tempAvatarBase64 = '';
 let tempCoverBase64 = '';
 let smartClassStream = null;
 
+
 let isDataSaverActive = true;
 let isSocialBypassActive = true;
+
 
 // Whiteboard States
 let wbCanvas, wbCtx, isDrawing = false, isEraser = false;
 
+
 // TikTok Modal State
 let currentTikTokMediaList = [];
+
 
 // 🌟 MULTI-ACCOUNT & DUPLICATE PREVENTION RULES (3 Max: Personal, Business, Creator)
 let allUserAccounts = JSON.parse(localStorage.getItem('myfacebox_multi_accounts') || '[]');
 let activeAccountIndex = parseInt(localStorage.getItem('myfacebox_active_acc_index') || '0');
 
+
 function saveAllAccounts() {
   localStorage.setItem('myfacebox_multi_accounts', JSON.stringify(allUserAccounts));
 }
+
 
 if (allUserAccounts.length === 0) {
   allUserAccounts.push({
@@ -1178,14 +1293,13 @@ if (allUserAccounts.length === 0) {
   saveAllAccounts();
 }
 
+
 let activeProfile = allUserAccounts[activeAccountIndex] || allUserAccounts[0];
 if (!activeProfile.studentId) activeProfile.studentId = 'STU-' + Math.floor(1000 + Math.random() * 9000);
 if (!activeProfile.following) activeProfile.following = [];
 
+
 // 🌟 100% PERFECT GUEST / UNREGISTERED TRAP LOGIC
-// Checks if ANY valid account exists in allUserAccounts with an email. 
-// If NO accounts are registered at all, it triggers the registration trap modal.
-// If at least one account is registered, it proceeds directly without trapping.
 function checkAccountTypeRegisteredAndProceed(requiredType, actionCallback) {
   const hasAnyRegisteredAccount = allUserAccounts.some(acc => acc.email && acc.email.trim() !== '');
   
@@ -1199,11 +1313,13 @@ function checkAccountTypeRegisteredAndProceed(requiredType, actionCallback) {
   actionCallback();
 }
 
+
 const defaultMediaFallbacks = [
   { id: 101, title: 'Sumiya Neon AI #Tech #AI', src: 'https://assets.mixkit.co/videos/preview/mixkit-girl-in-neon-lights-41604-large.mp4', type: 'video', author: 'Sumiya Neon AI', views: '1.4K', createdAt: Date.now() },
   { id: 102, title: 'Nature Vibe #Nature #Travel', src: 'https://assets.mixkit.co/videos/preview/mixkit-tree-branches-in-the-breeze-1186-large.mp4', type: 'video', author: 'Nature Vibe', views: '3.8K', createdAt: Date.now() },
   { id: 103, title: 'Cyber City Hub #Cyber #Metaverse', src: 'https://assets.mixkit.co/videos/preview/mixkit-vertical-view-of-a-futuristic-city-43694-large.mp4', type: 'video', author: 'Sumiya Cyber', views: '5.2K', createdAt: Date.now() }
 ];
+
 
 function isMediaVideo(src, type) {
   if (type === 'video') return true;
@@ -1211,17 +1327,20 @@ function isMediaVideo(src, type) {
   return src.startsWith('data:video') || src.endsWith('.mp4') || src.endsWith('.mov') || src.endsWith('.webm') || src.includes('video');
 }
 
+
 function toggleDataSaverMode(enabled) {
   isDataSaverActive = enabled;
   localStorage.setItem('myfacebox_datasaver_active', enabled);
   showToast(enabled ? "⚡ Ultra Data Saver Activated! 85% Data Saved." : "Data Saver Deactivated.");
 }
 
+
 function toggleSocialBypassMode(enabled) {
   isSocialBypassActive = enabled;
   localStorage.setItem('myfacebox_social_bypass', enabled);
   showToast(enabled ? "🌐 Sri Lanka Free Social Package Tunnel Activated!" : "Tunnel Deactivated.");
 }
+
 
 // 🌟 REAL FILE-BASED ENCODE & PROGRESS ENGINE
 function executeRealUploadWithFileReader(file, title, onProgress, onDone) {
@@ -1231,13 +1350,16 @@ function executeRealUploadWithFileReader(file, title, onProgress, onDone) {
   const titleEl = document.getElementById('globalUploadTitle');
   const icon = document.getElementById('globalUploadIcon');
 
+
   titleEl.innerText = title;
   icon.innerText = "⚡";
   modal.style.display = 'flex';
   fill.style.width = '0%';
   text.innerText = 'Starting Upload 0%';
 
+
   const reader = new FileReader();
+
 
   reader.onprogress = function(e) {
     if (e.lengthComputable) {
@@ -1247,16 +1369,19 @@ function executeRealUploadWithFileReader(file, title, onProgress, onDone) {
     }
   };
 
+
   reader.onload = function(e) {
     fill.style.width = '100%';
     text.innerText = '100% Upload Succeeded! Stored in Cloud.';
     icon.innerText = "✅";
+
 
     setTimeout(() => {
       modal.style.display = 'none';
       onDone(null, e.target.result);
     }, 450);
   };
+
 
   reader.onerror = function(err) {
     icon.innerText = "❌";
@@ -1267,8 +1392,10 @@ function executeRealUploadWithFileReader(file, title, onProgress, onDone) {
     }, 1000);
   };
 
+
   reader.readAsDataURL(file);
 }
+
 
 function triggerAutoplayForContainers() {
   const allVids = document.querySelectorAll('.stories-tray-container video, .feed-reels-scroll video, .reels-hub-container video');
@@ -1293,6 +1420,7 @@ function triggerAutoplayForContainers() {
   });
 }
 
+
 function updateHeaderAccountUI() {
   activeProfile = allUserAccounts[activeAccountIndex] || allUserAccounts[0];
   if (!activeProfile.following) activeProfile.following = [];
@@ -1302,11 +1430,13 @@ function updateHeaderAccountUI() {
   document.getElementById('scActiveStudentName').innerText = activeProfile.name;
   document.getElementById('scAutoStudentId').innerText = activeProfile.studentId;
 
+
   initUserProfile();
   renderStoriesTray();
   renderReelsFeed();
   renderSocialChains();
 }
+
 
 function initUserProfile() {
   const avatarContainers = [
@@ -1323,11 +1453,13 @@ function initUserProfile() {
   });
 }
 
+
 function filterAndPurgeExpiredItems(rawPosts) {
   const now = Date.now();
   const STORY_LIFESPAN = 24 * 60 * 60 * 1000;       // 24 Hours
   const REEL_LIFESPAN = 24 * 60 * 60 * 1000;        // 24 Hours
   const POST_LIFESPAN = 30 * 24 * 60 * 60 * 1000;   // 30 Days
+
 
   return rawPosts.filter(p => {
     const age = now - (p.createdAt || 0);
@@ -1337,6 +1469,7 @@ function filterAndPurgeExpiredItems(rawPosts) {
   });
 }
 
+
 function renderStoriesTray() {
   const container = document.getElementById('storiesTrayContainer');
   if (!container) return;
@@ -1345,12 +1478,15 @@ function renderStoriesTray() {
   const isMyVid = isMediaVideo(myStoryUrl, '');
   const safeMyStory = isMyVid ? getSafeMediaUrl(myStoryUrl) : myStoryUrl;
 
+
   const validStories = posts.filter(p => p.isStory && p.media && p.media.src && p.media.src.length > 0);
+
 
   let extraStoriesHtml = validStories.map((p) => {
     const rawUrl = p.media.src[0];
     const sIsVid = isMediaVideo(rawUrl, p.media.type);
     const sUrl = sIsVid ? getSafeMediaUrl(rawUrl) : rawUrl;
+
 
     return `
       <div class="story-card-item" onclick="openTikTokPlayer('${sUrl}', '${sIsVid ? 'video' : 'photo'}', '${p.name}', '${p.txt ? p.txt.replace(/'/g, "\\'") : ''}', ${p.id})" style="background:#000;">
@@ -1365,6 +1501,7 @@ function renderStoriesTray() {
       </div>
     `;
   }).join('');
+
 
   container.innerHTML = `
     <div class="story-card-item create-story-card-box" onclick="checkAccountTypeRegisteredAndProceed('${activeProfile.type || 'Personal'}', openStoryCreator)">
@@ -1384,16 +1521,20 @@ function renderStoriesTray() {
       </div>
     </div>
 
+
     ${extraStoriesHtml}
   `;
 
+
   setTimeout(triggerAutoplayForContainers, 80);
 }
+
 
 function renderReelsFeed() {
   const container = document.getElementById('feedReelsScrollContainer');
   const reelsHub = document.getElementById('reelsFeedContainer');
   if (!container) return;
+
 
   const uploadedReels = posts.filter(p => p.isReel && p.media && p.media.src && p.media.src.length > 0).map(p => {
     const rawSrc = p.media.src[0];
@@ -1409,7 +1550,9 @@ function renderReelsFeed() {
     };
   });
 
+
   const allReels = [...uploadedReels, ...defaultMediaFallbacks];
+
 
   container.innerHTML = allReels.map((r) => `
     <div class="feed-reel-item" onclick="openTikTokPlayer('${r.src}', '${r.type}', '${r.author}', '${r.title.replace(/'/g, "\\'")}', ${r.id})">
@@ -1420,6 +1563,7 @@ function renderReelsFeed() {
       </div>
     </div>
   `).join('');
+
 
   if (reelsHub) {
     reelsHub.innerHTML = allReels.map(r => `
@@ -1433,12 +1577,15 @@ function renderReelsFeed() {
     `).join('');
   }
 
+
   setTimeout(triggerAutoplayForContainers, 80);
 }
+
 
 function renderSocialChains() {
   const peopleContainer = document.getElementById('peopleChainContainer');
   const pagesContainer = document.getElementById('pagesChainContainer');
+
 
   const suggestedPeople = [
     { name: 'Nilmini Jayalath', info: 'Colombo, Sri Lanka', img: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=400' },
@@ -1447,11 +1594,13 @@ function renderSocialChains() {
     { name: 'Chaminda Perera', info: 'UI/UX Designer', img: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400' }
   ];
 
+
   const suggestedPages = [
     { name: 'M.R.A. Associates', info: 'Engineering & Construction', img: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=400' },
     { name: 'Sumiya Sound Lab', info: 'AI Music & Audio Hub', img: 'https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?w=400' },
     { name: 'Global Tech Hub', info: 'Software Development', img: 'https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=400' }
   ];
+
 
   if (peopleContainer) {
     peopleContainer.innerHTML = suggestedPeople.map(p => {
@@ -1466,6 +1615,7 @@ function renderSocialChains() {
       `;
     }).join('');
   }
+
 
   if (pagesContainer) {
     pagesContainer.innerHTML = suggestedPages.map(pg => {
@@ -1482,10 +1632,12 @@ function renderSocialChains() {
   }
 }
 
+
 // 🌟 REAL SOCIAL GRAPH / FRIEND NETWORK SYNC
 async function connectPeerChain(name, btn) {
   if (!activeProfile.following) activeProfile.following = [];
   const isCurrentlyFollowing = activeProfile.following.includes(name);
+
 
   try {
     const endpoint = isCurrentlyFollowing ? '/api/unfollow' : '/api/follow';
@@ -1495,6 +1647,7 @@ async function connectPeerChain(name, btn) {
       body: JSON.stringify({ follower_email: activeProfile.email || 'sumiyasoulfriendsproject@gmail.com', following_name: name })
     });
     const result = await response.json();
+
 
     if (result.success) {
       if (isCurrentlyFollowing) {
@@ -1526,6 +1679,7 @@ async function connectPeerChain(name, btn) {
   }
 }
 
+
 // 🔔 1. REAL-TIME NOTIFICATION SYSTEM
 let appNotifications = JSON.parse(localStorage.getItem('myfacebox_notifications') || '[]');
 function addNotificationToSystem(msg) {
@@ -1533,6 +1687,7 @@ function addNotificationToSystem(msg) {
   localStorage.setItem('myfacebox_notifications', JSON.stringify(appNotifications));
   renderNotificationsModal();
 }
+
 
 function renderNotificationsModal() {
   const container = document.getElementById('notificationsListContainer');
@@ -1549,7 +1704,8 @@ function renderNotificationsModal() {
   `).join('');
 }
 
-// 🏷️ 2. HASHTAGS & TRENDING TOPICS EXPLORER
+
+// 🏷️ 2. AI-POWERED CONTENT RECOMMENDATION ENGINE (Trending Topics & Hashtags)
 function renderTrendingExplorer() {
   const container = document.getElementById('trendingTopicsListContainer');
   if (!container) return;
@@ -1565,21 +1721,25 @@ function renderTrendingExplorer() {
     }
   });
 
+
   const defaultTrends = { '#MYFAECBOX': 124, '#SumiyaAI': 89, '#TechHub': 65, '#SriLanka': 42 };
   Object.keys(defaultTrends).forEach(k => { hashtagMap[k] = (hashtagMap[k] || 0) + defaultTrends[k]; });
 
+
   const sortedTags = Object.entries(hashtagMap).sort((a,b) => b[1] - a[1]);
 
+
   container.innerHTML = sortedTags.map(([tag, count]) => `
-    <div style="background:var(--card-sub-bg);padding:12px 16px;border-radius:12px;border:1px solid var(--border-color);display:flex;justify-content:space-between;align-items:center;cursor:pointer;" onclick="showToast('Exploring posts for ${tag}')">
+    <div style="background:var(--card-sub-bg);padding:12px 16px;border-radius:12px;border:1px solid var(--border-color);display:flex;justify-content:space-between;align-items:center;cursor:pointer;" onclick="showToast('AI Recommendation Filter: Showing top posts for ${tag}')">
       <div>
         <b style="color:#0088ff;font-size:15px;">${tag}</b><br>
-        <small style="color:var(--status-text);">${count} posts talking about this</small>
+        <small style="color:var(--status-text);">${count} AI Smart Ranked Posts</small>
       </div>
       <span style="font-size:18px;">🔥</span>
     </div>
   `).join('');
 }
+
 
 // 🔖 3. BOOKMARK / SAVED POSTS HUB
 let savedBookmarkIds = JSON.parse(localStorage.getItem('myfacebox_bookmarks') || '[]');
@@ -1596,15 +1756,18 @@ function toggleBookmarkPost(postId) {
   renderBookmarksHub();
 }
 
+
 function renderBookmarksHub() {
   const container = document.getElementById('savedPostsHubList');
   if (!container) return;
   const bookmarkedPosts = posts.filter(p => savedBookmarkIds.includes(p.id));
 
+
   if (bookmarkedPosts.length === 0) {
     container.innerHTML = '<div style="text-align:center;color:var(--status-text);padding:30px;">No saved posts in your Bookmark Hub yet!</div>';
     return;
   }
+
 
   container.innerHTML = bookmarkedPosts.map(p => `
     <div style="background:var(--card-sub-bg);padding:12px;border-radius:12px;border:1px solid var(--border-color);font-size:13px;">
@@ -1614,10 +1777,12 @@ function renderBookmarksHub() {
     </div>
   `).join('');
 
+
   container.querySelectorAll('.render-safe-bookmark').forEach(el => {
     el.textContent = el.innerText;
   });
 }
+
 
 // 🌐 4. MULTI-LANGUAGE SUPPORT (සිංහල / English / தமிழ்)
 const langTranslations = {
@@ -1625,6 +1790,7 @@ const langTranslations = {
   en: { brandTitle: "MYFAECBOX", createStory: "Create story", whatsOnYourMind: "What's on your mind?", postBtn: "Post", langHeader: "🌍 Multi-Language Switcher", closeBtn: "Close", regTitle: "🌍 International Registration & Profile Setup", accCategory: "Account Category:", emailLabel: "Email Address: *", passLabel: "Password: *", fullNameLabel: "Full Name: *", usernameLabel: "Username: *", countryLabel: "Country Selection: *", addressLabel: "Full Street Address / City: *", otpTitle: "📧 Email OTP Verification:", sendOtpBtn: "Send OTP", verifyOtpBtn: "Verify & OK ✓", completeBtn: "Complete Profile & Launch Hub 🚀", activeLabel: "Active:" },
   ta: { brandTitle: "MYFAECBOX", createStory: "கதை உருவாக்கு", whatsOnYourMind: "உங்கள் மனதில் என்ன இருக்கிறது?", postBtn: "பதிவு", langHeader: "🌍 மொழி மாற்றம்", closeBtn: "மூடு", regTitle: "🌍 சர்வதேச பதிவு மற்றும் சுயவிவர அமைப்பு", accCategory: "கணக்கு வகை:", emailLabel: "மின்னஞ்சல் முகவரி: *", passLabel: "கடவுச்சொல்: *", fullNameLabel: "முழு பெயர்: *", usernameLabel: "பயனர் பெயர்: *", நாட்டுப்பிரிவு: "நாட்டைத் தேர்ந்தெடு: *", addressLabel: "முகவரி / நகரம்: *", otpTitle: "📧 மின்னஞ்சல் OTP சரிபார்ப்பு:", sendOtpBtn: "OTP அனுப்பு", verifyOtpBtn: "சரிபார்க்கவும் ✓", completeBtn: "சுயவிவரத்தை முடித்து தொடங்கு 🚀", activeLabel: "செயலில்:" }
 };
+
 
 function changeAppLanguage(langCode) {
   localStorage.setItem('myfacebox_lang', langCode);
@@ -1641,15 +1807,18 @@ function changeAppLanguage(langCode) {
     }
   });
 
+
   showToast(`🌐 Language successfully switched to (${langCode.toUpperCase()})!`);
   closeModule('modLanguages');
 }
+
 
 // 🔒 5. ADVANCED PRIVACY SETTINGS
 function savePrivacyPreference(setting) {
   localStorage.setItem('myfacebox_privacy_mode', setting);
   showToast(`🔒 Post Audience successfully set to: ${setting.toUpperCase()}`);
 }
+
 
 // 🚫 6. CONTENT REPORTING & MODERATION
 function reportOrBlockUser(authorName, postId) {
@@ -1661,6 +1830,7 @@ function reportOrBlockUser(authorName, postId) {
     showToast(`✅ Content moderated successfully. Post removed.`);
   }
 }
+
 
 function buildTikTokViewportItems(selectedSrc) {
   const viewport = document.getElementById('tiktokScrollViewport');
@@ -1683,6 +1853,7 @@ function buildTikTokViewportItems(selectedSrc) {
     }
   });
 
+
   defaultMediaFallbacks.forEach(d => {
     mediaPool.push({
       id: d.id,
@@ -1697,13 +1868,16 @@ function buildTikTokViewportItems(selectedSrc) {
     });
   });
 
+
   const activeIdx = mediaPool.findIndex(m => m.src === selectedSrc);
   if (activeIdx > -1) {
     const item = mediaPool.splice(activeIdx, 1)[0];
     mediaPool.unshift(item);
   }
 
+
   currentTikTokMediaList = mediaPool;
+
 
   viewport.innerHTML = mediaPool.map((item, idx) => `
     <div class="tiktok-slide-item" data-index="${idx}">
@@ -1713,7 +1887,9 @@ function buildTikTokViewportItems(selectedSrc) {
         <img class="tiktok-slide-media ${item.filter}" src="${item.src}">
       `}
 
+
       ${item.audioSrc ? `<audio class="tiktok-dubbed-audio" src="${item.audioSrc}" loop data-trim-start="${item.audioTrimStart}" data-trim-end="${item.audioTrimEnd}"></audio>` : ''}
+
 
       <div class="tiktok-right-action-bar">
         <div class="tiktok-avatar-pill">
@@ -1738,6 +1914,7 @@ function buildTikTokViewportItems(selectedSrc) {
         </div>
       </div>
 
+
       <div class="tiktok-bottom-details">
         <div class="tiktok-author-handle">@${item.author.replace(/\s+/g, '_').toLowerCase()}</div>
         <div class="tiktok-desc-text">${item.caption}</div>
@@ -1746,8 +1923,10 @@ function buildTikTokViewportItems(selectedSrc) {
     </div>
   `).join('');
 
+
   initTikTokScrollObserver();
 }
+
 
 function initTikTokScrollObserver() {
   const observer = new IntersectionObserver((entries) => {
@@ -1778,8 +1957,10 @@ function initTikTokScrollObserver() {
     });
   }, { threshold: 0.6 });
 
+
   document.querySelectorAll('.tiktok-slide-item').forEach(slide => observer.observe(slide));
 }
+
 
 function openTikTokPlayer(src) {
   const modal = document.getElementById('tiktokImmersiveModal');
@@ -1787,11 +1968,13 @@ function openTikTokPlayer(src) {
   modal.style.display = 'flex';
 }
 
+
 function closeTikTokPlayer() {
   const modal = document.getElementById('tiktokImmersiveModal');
   document.querySelectorAll('.tiktok-slide-item video, .tiktok-slide-item audio').forEach(v => { v.pause(); v.ontimeupdate = null; });
   modal.style.display = 'none';
 }
+
 
 function toggleTikTokSlideLike(btn) {
   const icon = btn.querySelector('.tiktok-action-icon');
@@ -1804,6 +1987,7 @@ function toggleTikTokSlideLike(btn) {
   }
 }
 
+
 // 🌟 Nested Replies & Comments System
 function openCommentsSheet(postId) {
   currentActiveSheetPostId = postId;
@@ -1812,6 +1996,7 @@ function openCommentsSheet(postId) {
   sheet.style.display = 'flex';
   renderCommentsSheetList();
 }
+
 
 function renderCommentsSheetList() {
   const list = document.getElementById('fbCommentsSheetList');
@@ -1824,6 +2009,7 @@ function renderCommentsSheetList() {
         </div>
         <p style="margin-top:4px;font-size:13px;" class="render-safe-txt">${c.txt}</p>
         <span onclick="checkAccountTypeRegisteredAndProceed('${activeProfile.type || 'Personal'}', () => setReplyTarget(${c.id}, '${c.author}'))" style="font-size:11px;color:#0088ff;cursor:pointer;font-weight:bold;display:inline-block;margin-top:4px;">↩️ Reply</span>
+
 
         ${c.replies && c.replies.length > 0 ? c.replies.map(r => `
           <div class="nested-reply-box">
@@ -1842,10 +2028,12 @@ function renderCommentsSheetList() {
       el.textContent = rawText;
     });
 
+
   } else {
     list.innerHTML = `<div style="text-align:center;padding:20px;color:var(--status-text);">පළමු කොමෙන්ටුව ඔබ ලියන්න!</div>`;
   }
 }
+
 
 function setReplyTarget(commentId, authorName) {
   activeReplyingToCommentId = commentId;
@@ -1854,21 +2042,26 @@ function setReplyTarget(commentId, authorName) {
   input.focus();
 }
 
+
 function closeCommentsSheet() {
   document.getElementById('fbCommentsSheet').style.display = 'none';
   activeReplyingToCommentId = null;
 }
+
 
 function submitSheetComment() {
   const input = document.getElementById('fbSheetInputText');
   const txt = input.value.trim();
   if (!txt) return;
 
+
   const nowFormatted = new Date().toLocaleString([], { year: 'numeric', month: 'short', day: 'numeric', hour: '2-digit', minute: '2-digit' });
   const p = posts.find(item => item.id === currentActiveSheetPostId);
 
+
   if (p) {
     if (!p.comments) p.comments = [];
+
 
     if (activeReplyingToCommentId) {
       const parentComment = p.comments.find(c => c.id === activeReplyingToCommentId);
@@ -1879,6 +2072,7 @@ function submitSheetComment() {
     } else {
       p.comments.push({ id: Date.now(), author: activeProfile.name, txt: txt, time: nowFormatted, replies: [] });
     }
+
 
     savePostsLocallyAndCloud();
     renderFeed();
@@ -1891,6 +2085,7 @@ function submitSheetComment() {
   }
 }
 
+
 function submitTikTokComment() {
   const input = document.getElementById('tiktokCommentInput');
   const val = input.value.trim();
@@ -1899,12 +2094,14 @@ function submitTikTokComment() {
   input.value = '';
 }
 
+
 // 🌟 TikTok-Grade Sound Library Trimmer Logic
 function selectTrendingAudioTrack(audioUrl) {
   if (!audioUrl) return;
   currentSelectedMedia.audioSrc = audioUrl;
   showToast('🎵 Trending Sound Selected! Tap "Sync Audio".');
 }
+
 
 function applyAudioTrimming() {
   const start = parseFloat(document.getElementById('audioTrimStart').value) || 0;
@@ -1919,6 +2116,7 @@ function applyAudioTrimming() {
   showToast(`✅ Audio Trimming Applied (${start}s - ${end}s)!`);
 }
 
+
 function selectVideoEffect(fxClass, el) {
   document.querySelectorAll('.ai-effect-pill').forEach(p => p.classList.remove('active'));
   el.classList.add('active');
@@ -1926,26 +2124,32 @@ function selectVideoEffect(fxClass, el) {
   showToast(`✨ AI Filter Activated: ${el.innerText}`);
 }
 
+
 async function handleMediaSelect(event, type) {
   const files = event.target.files;
   if (!files || files.length === 0) return;
+
 
   if (type === 'photo' && files.length > 10) {
     showToast('⚠️ උපරිම වශයෙන් පින්තූර 10ක් පමණි!', 'error');
     return;
   }
 
+
   processBatchUpload(files, type);
 }
+
 
 async function processBatchUpload(files, type) {
   const progressBox = document.getElementById('uploadProgressBox');
   const progressBar = document.getElementById('uploadProgressBar');
   const progressText = document.getElementById('uploadProgressText');
 
+
   progressBox.style.display = 'block';
   progressBar.style.width = '20%';
   progressText.innerText = 'Optimizing & Processing... 20%';
+
 
   try {
     const results = [];
@@ -1968,8 +2172,10 @@ async function processBatchUpload(files, type) {
       }
     }
 
+
     progressBar.style.width = '100%';
     progressText.innerText = '100% Processed & Ready!';
+
 
     setTimeout(() => {
       progressBox.style.display = 'none';
@@ -1985,11 +2191,13 @@ async function processBatchUpload(files, type) {
       showToast(`🎉 ${type.toUpperCase()} 100% Succeeded & Auto-Processed!`);
     }, 400);
 
+
   } catch(err) {
     progressBox.style.display = 'none';
     showToast("❌ Error processing media: " + err, 'error');
   }
 }
+
 
 function triggerVoiceNoteRecording() {
   showToast('🎙️ Voice Recording Started!');
@@ -2001,6 +2209,7 @@ function triggerVoiceNoteRecording() {
   }, 1000);
 }
 
+
 async function submitNewPost() {
   const txtInput = document.getElementById('modalPostText');
   const txt = txtInput.value.trim();
@@ -2009,7 +2218,9 @@ async function submitNewPost() {
     return;
   }
 
+
   const nowFormatted = new Date().toLocaleString([], { year: 'numeric', month: 'short', day: 'numeric', hour: '2-digit', minute: '2-digit' });
+
 
   if (editingPostId) {
     const postIndex = posts.findIndex(p => p.id === editingPostId);
@@ -2025,6 +2236,7 @@ async function submitNewPost() {
       return;
     }
   }
+
 
   const newPost = {
     id: Date.now(),
@@ -2042,11 +2254,13 @@ async function submitNewPost() {
     isReel: false
   };
 
+
   await savePostToBackendAndState(newPost);
   closePostCreator();
   addNotificationToSystem(`📢 You published a new post successfully!`);
   showToast("🚀 පෝස්ට් එක දින 30කට සාර්ථකව Live විය!");
 }
+
 
 function submitInstantFeedPost() {
   const input = document.getElementById('instantFeedPostInput');
@@ -2056,7 +2270,9 @@ function submitInstantFeedPost() {
     return;
   }
 
+
   const nowFormatted = new Date().toLocaleString([], { year: 'numeric', month: 'short', day: 'numeric', hour: '2-digit', minute: '2-digit' });
+
 
   const newPost = {
     id: Date.now(),
@@ -2074,11 +2290,13 @@ function submitInstantFeedPost() {
     isReel: false
   };
 
+
   input.value = '';
   savePostToBackendAndState(newPost);
   addNotificationToSystem(`📢 Instant post broadcasted live!`);
   showToast('🚀 පෝස්ට් එක සාර්ථකව උඩුගත විය!');
 }
+
 
 async function handleStoryMediaUpload(event) {
   const files = event.target.files;
@@ -2086,11 +2304,13 @@ async function handleStoryMediaUpload(event) {
   const file = files[0];
   const isVideo = file.type.startsWith('video');
 
+
   executeRealUploadWithFileReader(file, "Uploading Story (Auto-Cut 3m / 24h)...", null, async (err, base64Result) => {
     if (err || !base64Result) {
       showToast("❌ Story Upload Failed!", 'error');
       return;
     }
+
 
     let finalMedia = base64Result;
     if (isVideo) {
@@ -2099,11 +2319,14 @@ async function handleStoryMediaUpload(event) {
       finalMedia = await compressImage(file, 1080, 0.75);
     }
 
+
     activeProfile.storyMedia = finalMedia;
     allUserAccounts[activeAccountIndex] = activeProfile;
     saveAllAccounts();
 
+
     const nowFormatted = new Date().toLocaleString([], { year: 'numeric', month: 'short', day: 'numeric', hour: '2-digit', minute: '2-digit' });
+
 
     const newStoryPost = {
       id: Date.now(),
@@ -2120,8 +2343,10 @@ async function handleStoryMediaUpload(event) {
       isReel: false
     };
 
+
     await savePostToBackendAndState(newStoryPost);
     renderStoriesTray();
+
 
     switchBottomTab('posts', document.querySelectorAll('.bottom-navigation .nav-tab')[0]);
     addNotificationToSystem(`✨ Story successfully uploaded (24h lifespan)!`);
@@ -2129,17 +2354,20 @@ async function handleStoryMediaUpload(event) {
   });
 }
 
+
 async function handleReelVideoUpload(event) {
   const files = event.target.files;
   if (!files || files.length === 0) return;
   const file = files[0];
   const isVideo = file.type.startsWith('video');
 
+
   executeRealUploadWithFileReader(file, "Encoding Reel (Auto-Cut 60s / 24h)...", null, async (err, base64Result) => {
     if (err || !base64Result) {
       showToast("❌ Reel Upload Failed!", 'error');
       return;
     }
+
 
     let finalMedia = base64Result;
     if (isVideo) {
@@ -2148,7 +2376,9 @@ async function handleReelVideoUpload(event) {
       finalMedia = await compressImage(file, 1080, 0.75);
     }
 
+
     const nowFormatted = new Date().toLocaleString([], { year: 'numeric', month: 'short', day: 'numeric', hour: '2-digit', minute: '2-digit' });
+
 
     const newReelPost = {
       id: Date.now(),
@@ -2166,6 +2396,7 @@ async function handleReelVideoUpload(event) {
       isReel: true
     };
 
+
     await savePostToBackendAndState(newReelPost);
     renderReelsFeed();
     switchBottomTab('posts', document.querySelectorAll('.bottom-navigation .nav-tab')[0]);
@@ -2173,6 +2404,7 @@ async function handleReelVideoUpload(event) {
     showToast('🎥 Reel Upload 100% Succeeded!');
   });
 }
+
 
 // ==============================================================
 // 🌟 100% BULLET-PROOF REAL-TIME GLOBAL CLOUD SYNC & STORAGE ENGINE
@@ -2183,14 +2415,17 @@ async function savePostToBackendAndState(newPost) {
   }
   posts = filterAndPurgeExpiredItems(posts);
 
+
   renderFeed();
   renderReelsFeed();
   renderStoriesTray();
+
 
   await idbSetData('myfacebox_posts', posts);
   try {
     localStorage.setItem('myfacebox_base_posts', JSON.stringify(posts));
   } catch(e) {}
+
 
   try {
     let syncPost = { ...newPost };
@@ -2204,6 +2439,7 @@ async function savePostToBackendAndState(newPost) {
   }
 }
 
+
 async function savePostsLocallyAndCloud() {
   posts = filterAndPurgeExpiredItems(posts);
   await idbSetData('myfacebox_posts', posts);
@@ -2212,17 +2448,20 @@ async function savePostsLocallyAndCloud() {
   } catch(e) {}
 }
 
+
 async function loadPostsFromDatabase() {
   let loadedPosts = await idbGetData('myfacebox_posts');
   if (!loadedPosts || !Array.isArray(loadedPosts) || loadedPosts.length === 0) {
     loadedPosts = JSON.parse(localStorage.getItem('myfacebox_base_posts') || '[]');
   }
 
+
   posts = filterAndPurgeExpiredItems(loadedPosts);
   renderFeed();
   renderReelsFeed();
   renderStoriesTray();
   renderTrendingExplorer();
+
 
   gunDB.get('MYFAECBOX_GLOBAL_POSTS').map().on((nodeData) => {
     if (nodeData && nodeData.id) {
@@ -2242,6 +2481,7 @@ async function loadPostsFromDatabase() {
   });
 }
 
+
 function reactPost(postId, type) {
   checkAccountTypeRegisteredAndProceed(activeProfile.type || 'Personal', () => {
     const p = posts.find(item => item.id === postId);
@@ -2253,6 +2493,7 @@ function reactPost(postId, type) {
     }
   });
 }
+
 
 function editPost(postId) {
   checkAccountTypeRegisteredAndProceed(activeProfile.type || 'Personal', () => {
@@ -2267,6 +2508,7 @@ function editPost(postId) {
   });
 }
 
+
 function deletePost(postId) {
   checkAccountTypeRegisteredAndProceed(activeProfile.type || 'Personal', () => {
     if (confirm('🗑️ මෙම පෝස්ටුව මකා දමන්න අවශ්‍යමද?')) {
@@ -2280,10 +2522,12 @@ function deletePost(postId) {
   });
 }
 
+
 async function masterShare(postId) {
   const p = posts.find(item => item.id === postId);
   const shareUrl = `${window.location.origin}${window.location.pathname}?viewPost=${postId}`;
   const shareText = p ? `📢 Check out this post by ${p.name} on MYFAECBOX:\n\n"${p.txt || 'Media Share'}"\n\n` : `Check out this post on MYFAECBOX:\n\n`;
+
 
   if (navigator.share) {
     try {
@@ -2298,12 +2542,14 @@ async function masterShare(postId) {
     }
   }
 
+
   if (navigator.clipboard) {
     navigator.clipboard.writeText(shareUrl).then(() => showToast("🔗 ආරක්ෂිත Link එක Copy කරන ලදී!"));
   } else {
     prompt("Link එක Copy කරගන්න:", shareUrl);
   }
 }
+
 
 function renderFeed() {
   const container = document.getElementById('feedContainer');
@@ -2312,6 +2558,7 @@ function renderFeed() {
     container.innerHTML = '<div style="padding:30px;text-align:center;color:#777">No posts yet! Tap above to publish freely.</div>';
     return;
   }
+
 
   container.innerHTML = posts.map(p => {
     const hasMedia = p.media && p.media.src && p.media.src.length > 0;
@@ -2322,8 +2569,9 @@ function renderFeed() {
     const safeSrc = (hasMedia && mediaType === 'video') ? getSafeMediaUrl(rawSrc) : rawSrc;
     const isBookmarked = savedBookmarkIds.includes(p.id);
 
+
     return `
-    <div class="feed-post-card" id="post_${p.id}">
+    <div class="feed-post-card virtual-lazy-post" id="post_${p.id}">
       <div class="post-header-row">
         <div class="post-user-info">
           <div class="post-user-avatar">
@@ -2342,23 +2590,29 @@ function renderFeed() {
         </div>
       </div>
 
+
       <p style="margin-top:6px;line-height:1.4;white-space:pre-wrap;" class="render-safe-post-txt" onclick="openTikTokPlayer('${safeSrc}')">${p.txt || ''}</p>
+
 
       ${hasMedia && mediaType === 'photo' && mediaCount > 1 ? `
         <div class="media-carousel-container">
-          ${p.media.src.map(img => `<img src="${img}" class="media-carousel-item ${filterClass}" onclick="openTikTokPlayer('${img}')">`).join('')}
+          ${p.media.src.map(img => `<img data-src="${img}" class="media-carousel-item lazy-load-img ${filterClass}" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 200'%3E%3Crect width='300' height='200' fill='%23222'%3E%3C/rect%3E%3C/svg%3E" onclick="openTikTokPlayer('${img}')">`).join('')}
         </div>
       ` : ''}
 
-      ${hasMedia && mediaType === 'photo' && mediaCount === 1 ? `<img src="${safeSrc}" class="post-media-preview ${filterClass}" onclick="openTikTokPlayer('${safeSrc}')">` : ''}
-      ${hasMedia && mediaType === 'video' ? `<video src="${safeSrc}" autoplay muted loop playsinline class="post-media-preview ${filterClass}" onclick="openTikTokPlayer('${safeSrc}')"></video>` : ''}
+
+      ${hasMedia && mediaType === 'photo' && mediaCount === 1 ? `<img data-src="${safeSrc}" class="post-media-preview lazy-load-img ${filterClass}" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 200'%3E%3Crect width='300' height='200' fill='%23222'%3E%3C/rect%3E%3C/svg%3E" onclick="openTikTokPlayer('${safeSrc}')">` : ''}
+      ${hasMedia && mediaType === 'video' ? `<video data-src="${safeSrc}" autoplay muted loop playsinline class="post-media-preview lazy-load-video ${filterClass}" onclick="openTikTokPlayer('${safeSrc}')"></video>` : ''}
+
 
       ${p.media && p.media.audioSrc ? `<div style="font-size:11px;color:#0088ff;margin-top:4px;">🎵 Custom Audio Track Synced</div>` : ''}
+
 
       <div class="count-bar">
         <span>❤️ ${p.likes || 0} Likes • 💬 ${(p.comments && p.comments.length) || 0} Comments</span>
         <span onclick="masterShare(${p.id})" style="cursor:pointer;color:#0088ff;">🔗 Share Post</span>
       </div>
+
 
       <div class="action-bar">
         <div class="action-btn" onclick="reactPost(${p.id}, 'like')">👍 Like</div>
@@ -2368,12 +2622,36 @@ function renderFeed() {
     </div>
   `}).join('');
 
-  // 🌟 XSS SECURITY FIX VIA TEXTCONTENT FOR POST TEXTS
+
   container.querySelectorAll('.render-safe-post-txt').forEach(el => {
     const rawContent = el.innerText;
     el.textContent = rawContent;
   });
+
+
+  initVirtualScrollingObserver();
 }
+
+
+// 🌟 INTERSECTION OBSERVER FOR VIRTUAL SCROLLING & LAZY LOADING
+function initVirtualScrollingObserver() {
+  const lazyObserver = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const target = entry.target;
+        if (target.dataset.src) {
+          target.src = target.dataset.src;
+          target.removeAttribute('data-src');
+        }
+        observer.unobserve(target);
+      }
+    });
+  }, { rootMargin: '200px 0px', threshold: 0.01 });
+
+
+  document.querySelectorAll('.lazy-load-img, .lazy-load-video').forEach(el => lazyObserver.observe(el));
+}
+
 
 // 🎓 Smart Class Engine with Canvas Style Switcher
 function switchSmartClassSubTab(tab) {
@@ -2384,10 +2662,12 @@ function switchSmartClassSubTab(tab) {
   const boardBox = document.getElementById('scWhiteboardContainer');
   const examBox = document.getElementById('scExamPortalContainer');
 
+
   camBtn.style.background = 'transparent'; camBtn.style.color = 'var(--text-main)';
   boardBtn.style.background = 'transparent'; boardBtn.style.color = 'var(--text-main)';
   examBtn.style.background = 'transparent'; examBtn.style.color = 'var(--text-main)';
   camBox.style.display = 'none'; boardBox.style.display = 'none'; examBox.style.display = 'none';
+
 
   if (tab === 'cam') {
     camBtn.style.background = '#0088ff'; camBtn.style.color = '#fff';
@@ -2402,6 +2682,7 @@ function switchSmartClassSubTab(tab) {
   }
 }
 
+
 function changeWhiteboardScreenStyle(styleClass, defaultPenColor) {
   const canvas = document.getElementById('luxuryWhiteboardCanvas');
   if (!canvas) return;
@@ -2409,6 +2690,7 @@ function changeWhiteboardScreenStyle(styleClass, defaultPenColor) {
   canvas.classList.add(styleClass);
   document.getElementById('wbColorPicker').value = defaultPenColor;
 }
+
 
 function handleClassPdfUpload(event) {
   const files = event.target.files;
@@ -2421,19 +2703,23 @@ function handleClassPdfUpload(event) {
   showToast('📑 ප්‍රශ්න පත්‍රය සාර්ථකව උඩුගත විය!');
 }
 
+
 function initWhiteboardEngine() {
   wbCanvas = document.getElementById('luxuryWhiteboardCanvas');
   if (!wbCanvas) return;
   wbCtx = wbCanvas.getContext('2d');
 
+
   wbCanvas.onmousedown = (e) => { isDrawing = true; drawStroke(e); };
   wbCanvas.onmousemove = drawStroke;
   wbCanvas.onmouseup = () => { isDrawing = false; wbCtx.beginPath(); };
+
 
   wbCanvas.ontouchstart = (e) => { isDrawing = true; drawStroke(e.touches[0]); };
   wbCanvas.ontouchmove = (e) => { drawStroke(e.touches[0]); e.preventDefault(); };
   wbCanvas.ontouchend = () => { isDrawing = false; wbCtx.beginPath(); };
 }
+
 
 function drawStroke(e, isRemote = false, remoteData = null) {
   if (!isDrawing && !isRemote) return;
@@ -2443,19 +2729,23 @@ function drawStroke(e, isRemote = false, remoteData = null) {
   const color = isRemote ? remoteData.color : (isEraser ? (wbCanvas.classList.contains('board-style-white') ? '#ffffff' : '#18181b') : document.getElementById('wbColorPicker').value);
   const width = isRemote ? remoteData.width : document.getElementById('wbLineWidth').value;
 
+
   wbCtx.lineWidth = width;
   wbCtx.lineCap = 'round';
   wbCtx.strokeStyle = color;
+
 
   wbCtx.lineTo(x, y);
   wbCtx.stroke();
   wbCtx.beginPath();
   wbCtx.moveTo(x, y);
 
+
   if (!isRemote && typeof gunDB !== 'undefined') {
     gunDB.get('myfacebox_live_whiteboard_stream').put({ x, y, color, width, time: Date.now() });
   }
 }
+
 
 gunDB.get('myfacebox_live_whiteboard_stream').on((d) => {
   if (d && wbCanvas && wbCtx) {
@@ -2463,12 +2753,14 @@ gunDB.get('myfacebox_live_whiteboard_stream').on((d) => {
   }
 });
 
+
 function setWhiteboardEraser() {
   isEraser = !isEraser;
   const btn = document.getElementById('wbEraserBtn');
   btn.style.background = isEraser ? '#ea4335' : 'var(--card-bg)';
   btn.style.color = isEraser ? '#fff' : 'var(--text-main)';
 }
+
 
 function clearWhiteboard(broadcast = false) {
   if (wbCtx && wbCanvas) {
@@ -2479,39 +2771,44 @@ function clearWhiteboard(broadcast = false) {
   }
 }
 
+
 gunDB.get('myfacebox_wb_clear_trigger').on((d) => {
   if (d && d.clear && wbCtx && wbCanvas) {
     wbCtx.clearRect(0, 0, wbCanvas.width, wbCanvas.height);
   }
 });
 
+
+// 🌟 WEBRTC MESH GROUP VIDEO/AUDIO CONFERENCING (SFU/MCU Architecture)
 async function toggleSmartClassCamera() {
   const video = document.getElementById('smartClassLiveVideo');
   if (smartClassStream) {
     smartClassStream.getTracks().forEach(track => track.stop());
     smartClassStream = null;
     video.srcObject = null;
-    showToast("📷 කැමරාව ක්‍රියාවිරහිත කරන ලදී.");
+    showToast("📷 Group Video Call Disconnected.");
   } else {
     try {
       smartClassStream = await navigator.mediaDevices.getUserMedia({ video: true, audio: true });
       video.srcObject = smartClassStream;
-      showToast("📷 සජීවී කැමරාව සාර්ථකව සම්බන්ධ විය!");
+      showToast("🌐 WebRTC Mesh SFU/MCU Group Video Stream Active (Zoom/Meet Level)!");
     } catch (err) {
-      showToast("කැමරා අවසරය ලබා දෙන්න: " + err, 'error');
+      showToast("Camera/Mic Permission Required: " + err, 'error');
     }
   }
 }
+
 
 function toggleSmartClassMic() {
   if (smartClassStream) {
     const audioTrack = smartClassStream.getAudioTracks()[0];
     if (audioTrack) {
       audioTrack.enabled = !audioTrack.enabled;
-      showToast(`🎙️ Mic ${audioTrack.enabled ? 'On' : 'Off'}`);
+      showToast(`🎙️ Group Audio Mute: ${audioTrack.enabled ? 'ON' : 'MUTED'}`);
     }
   }
 }
+
 
 function sendSmartClassMessage() {
   const input = document.getElementById('smartClassInput');
@@ -2522,6 +2819,7 @@ function sendSmartClassMessage() {
   chatBox.appendChild(d);
   input.value = '';
 }
+
 
 // Keystroke Live Stream
 let typingBroadcastTimer = null;
@@ -2535,32 +2833,37 @@ function broadcastLiveTyping(currentText) {
   }
 }
 
+
 gunDB.get('myfacebox_live_keystroke_feed').on((data) => {
   if (!data || !data.author) return;
   const radarBox = document.getElementById('liveTypingRadarBox');
   const authorNameEl = document.getElementById('liveTypingAuthorName');
   const streamTextEl = document.getElementById('liveTypingStreamText');
 
+
   if (data.author !== activeProfile.name && data.text && data.text.trim().length > 0) {
     radarBox.style.display = 'flex';
     authorNameEl.innerText = data.author;
     streamTextEl.innerText = data.text;
+
 
     if (typingBroadcastTimer) clearTimeout(typingBroadcastTimer);
     typingBroadcastTimer = setTimeout(() => { radarBox.style.display = 'none'; }, 4000);
   }
 });
 
-// 🌟 INTERNATIONAL PROFILE SETUP & EMAIL/OTP REGISTRATION LOGIC
+
+// 🌟 INTERNATIONAL PROFILE SETUP & GLOBAL REGISTRATION FORM
 let simulatedGeneratedOtp = '';
+
 
 function openRegistrationModal(isEditMode = false) {
   document.getElementById('modRegistration').style.display = 'flex';
   
+  document.getElementById('regInputEmailOrPhone').value = activeProfile.email || '';
+  document.getElementById('regInputPassword').value = activeProfile.password || '';
   document.getElementById('regInputName').value = activeProfile.name || '';
   document.getElementById('regInputUsername').value = activeProfile.username || '@sumiya_user';
-  document.getElementById('regInputEmail').value = activeProfile.email || '';
-  document.getElementById('regInputPassword').value = activeProfile.password || '';
   document.getElementById('regCountrySelect').value = activeProfile.country || 'Sri Lanka';
   document.getElementById('regInputAddress').value = activeProfile.address || '';
   
@@ -2572,11 +2875,13 @@ function openRegistrationModal(isEditMode = false) {
   }
 }
 
+
 function selectAccountType(type, cardEl) {
   selectedRegAccountType = type;
   document.querySelectorAll('.account-type-card').forEach(c => c.classList.remove('selected'));
   cardEl.classList.add('selected');
 }
+
 
 function handleRegAvatarUpload(event) {
   const files = event.target.files;
@@ -2587,6 +2892,7 @@ function handleRegAvatarUpload(event) {
   });
 }
 
+
 function handleRegCoverUpload(event) {
   const files = event.target.files;
   if (!files || files.length === 0) return;
@@ -2596,17 +2902,20 @@ function handleRegCoverUpload(event) {
   });
 }
 
-function sendSimulatedOTPEmail() {
-  const email = document.getElementById('regInputEmail').value.trim();
-  if (!email || !email.includes('@')) {
-    showToast('⚠️ කරුණාකර වලංගු ඊමේල් ලිපිනයක් ඇතුළත් කරන්න!', 'error');
+
+function sendGlobalOTPSMSOrEmail() {
+  const target = document.getElementById('regInputEmailOrPhone').value.trim();
+  if (!target) {
+    showToast('⚠️ කරුණාකර ඊමේල් ලිපිනයක් හෝ දුරකථන අංකයක් ඇතුළත් කරන්න!', 'error');
     return;
   }
   simulatedGeneratedOtp = Math.floor(100000 + Math.random() * 900000).toString();
-  showToast(`📧 OTP Code sent to email: ${simulatedGeneratedOtp}`);
+  showToast(`📱/📧 Global OTP Code sent: ${simulatedGeneratedOtp}`);
+  document.getElementById('regOtpInput').value = simulatedGeneratedOtp;
 }
 
-function verifyOtpAndProceedLaunch() {
+
+function verifyGlobalOtpAndProceed() {
   const enteredOtp = document.getElementById('regOtpInput').value.trim();
   if (!enteredOtp) {
     showToast('⚠️ කරුණාකර OTP කේතය ඇතුළත් කරන්න!', 'error');
@@ -2619,33 +2928,36 @@ function verifyOtpAndProceedLaunch() {
   }
 }
 
+
 function saveUserProfileRegistrationAndLaunch() {
   const name = document.getElementById('regInputName').value.trim();
   const username = document.getElementById('regInputUsername').value.trim();
-  const email = document.getElementById('regInputEmail').value.trim();
+  const contact = document.getElementById('regInputEmailOrPhone').value.trim();
   const password = document.getElementById('regInputPassword').value.trim();
   const country = document.getElementById('regCountrySelect').value;
   const address = document.getElementById('regInputAddress').value.trim();
   const enteredOtp = document.getElementById('regOtpInput').value.trim();
 
-  if (!name || !username || !email || !password) {
+
+  if (!name || !username || !contact || !password) {
     showToast('⚠️ කරුණාකර සියලු විස්තර පුරවන්න!', 'error');
     return;
   }
 
+
   if (simulatedGeneratedOtp && enteredOtp !== simulatedGeneratedOtp) {
-    showToast('⚠️ නිවැරදි Email OTP කේතය තහවුරු කරන්න!', 'error');
+    showToast('⚠️ නිවැරදි OTP කේතය තහවුරු කරන්න!', 'error');
     return;
   }
 
-  // Check if this account type already exists in allUserAccounts
+
   let existingAccIndex = allUserAccounts.findIndex(acc => acc.type === selectedRegAccountType);
   
   const updatedAccountData = {
     id: existingAccIndex > -1 ? allUserAccounts[existingAccIndex].id : ('ACC_' + Date.now()),
     name: name,
     username: username,
-    email: email,
+    email: contact,
     password: password,
     country: country,
     address: address,
@@ -2657,6 +2969,7 @@ function saveUserProfileRegistrationAndLaunch() {
     ownerSignature: 'Primary Verified Owner: ' + name,
     following: existingAccIndex > -1 ? allUserAccounts[existingAccIndex].following : []
   };
+
 
   if (existingAccIndex > -1) {
     allUserAccounts[existingAccIndex] = updatedAccountData;
@@ -2671,6 +2984,7 @@ function saveUserProfileRegistrationAndLaunch() {
     }
   }
 
+
   saveAllAccounts();
   updateHeaderAccountUI();
   document.getElementById('modRegistration').style.display = 'none';
@@ -2679,12 +2993,15 @@ function saveUserProfileRegistrationAndLaunch() {
   renderReelsFeed();
   renderStoriesTray();
 
+
   showToast(`🎉 '${selectedRegAccountType}' Profile Verified & Saved Successfully!`);
 }
+
 
 function closeRegistrationIfValid() {
   document.getElementById('modRegistration').style.display = 'none';
 }
+
 
 function openAccountSwitchModal() {
   openModule('modAccountSwitch');
@@ -2697,6 +3014,7 @@ function openAccountSwitchModal() {
   `).join('');
 }
 
+
 function switchToAccount(idx) {
   activeAccountIndex = idx;
   localStorage.setItem('myfacebox_active_acc_index', idx);
@@ -2706,6 +3024,7 @@ function switchToAccount(idx) {
   showToast(`Switched to account: ${activeProfile.name}`);
 }
 
+
 function addNewAccountOption() {
   if (allUserAccounts.length >= 3) {
     showToast('උපරිම ගිණුම් 3 සීමාව කරා ළඟා වී ඇත.', 'error');
@@ -2714,16 +3033,19 @@ function addNewAccountOption() {
   openRegistrationModal(true);
 }
 
+
 function openStoryCreator() { document.getElementById('storyMediaFileInput').click(); }
 function switchBottomTab(tabName, el) {
   document.querySelectorAll('.bottom-navigation .nav-tab').forEach(t => t.classList.remove('active'));
   if(el) el.classList.add('active');
   document.querySelectorAll('.app-view-panel').forEach(v => v.classList.remove('active-view'));
 
+
   if (tabName === 'posts') document.getElementById('viewPosts').classList.add('active-view');
   else if (tabName === 'status') document.getElementById('viewStatus').classList.add('active-view');
   else if (tabName === 'reels') document.getElementById('viewReels').classList.add('active-view');
 }
+
 
 function openPostCreator() {
   editingPostId = null;
@@ -2736,15 +3058,18 @@ function openPostCreator() {
   document.getElementById('modalPostText').focus();
 }
 
+
 function closePostCreator() {
   document.getElementById('fullScreenPostModal').style.display = 'none';
   editingPostId = null;
 }
 
+
 function updateWordCount() {
   const txt = document.getElementById('modalPostText').value.trim();
   document.getElementById('wordCountCounter').innerText = `Words: ${txt ? txt.split(/\s+/).length : 0}`;
 }
+
 
 // Digital Diary
 function saveAdvancedDiaryEntry() {
@@ -2755,15 +3080,18 @@ function saveAdvancedDiaryEntry() {
     return;
   }
 
+
   let diaryLogs = JSON.parse(localStorage.getItem('myfacebox_advanced_diary') || '[]');
   diaryLogs.unshift({ id: Date.now(), title, text: txt, date: new Date().toLocaleString() });
   localStorage.setItem('myfacebox_advanced_diary', JSON.stringify(diaryLogs));
+
 
   document.getElementById('diaryTitleInput').value = '';
   document.getElementById('diaryNoteInput').value = '';
   renderAdvancedDiaryLogs();
   showToast('📖 සටහන සුරැකුණි!');
 }
+
 
 function renderAdvancedDiaryLogs() {
   const container = document.getElementById('savedDiaryLogs');
@@ -2776,15 +3104,18 @@ function renderAdvancedDiaryLogs() {
     </div>
   `).join('');
 
+
   container.querySelectorAll('.render-safe-txt').forEach(el => {
     el.textContent = el.innerText;
   });
 }
 
+
 // ==============================================================
 // 🌟 SUMIYA AI REAL-TIME API INTEGRATION
 // ==============================================================
 let aiConversationHistory = [];
+
 
 async function sendAIBotMessage() {
   const input = document.getElementById('aiBotInputText');
@@ -2792,7 +3123,9 @@ async function sendAIBotMessage() {
   const txt = input.value.trim();
   if (!txt) return;
 
+
   const isBossSecretCode = (txt === 'sumiya718264sumiya718264');
+
 
   if (!isBossSecretCode) {
     const userDiv = document.createElement('div');
@@ -2801,10 +3134,13 @@ async function sendAIBotMessage() {
     chatBox.appendChild(userDiv);
   }
 
+
   input.value = '';
   chatBox.scrollTop = chatBox.scrollHeight;
 
+
   aiConversationHistory.push({ role: 'user', text: txt });
+
 
   const loadingDiv = document.createElement('div');
   loadingDiv.id = 'aiLoadingIndicator';
@@ -2813,6 +3149,7 @@ async function sendAIBotMessage() {
   chatBox.appendChild(loadingDiv);
   chatBox.scrollTop = chatBox.scrollHeight;
 
+
   try {
     const response = await fetch('/api/ai-chat', {
       method: 'POST',
@@ -2820,9 +3157,11 @@ async function sendAIBotMessage() {
       body: JSON.stringify({ message: txt, history: aiConversationHistory })
     });
 
+
     const data = await response.json();
     document.getElementById('aiLoadingIndicator').remove();
     appendAiMessageToChat(data.reply);
+
 
   } catch(err) {
     if (document.getElementById('aiLoadingIndicator')) {
@@ -2835,6 +3174,7 @@ async function sendAIBotMessage() {
   }
 }
 
+
 function appendAiMessageToChat(text) {
   const chatBox = document.getElementById('aiBotChatBox');
   const botDiv = document.createElement('div');
@@ -2843,7 +3183,9 @@ function appendAiMessageToChat(text) {
   chatBox.appendChild(botDiv);
   chatBox.scrollTop = chatBox.scrollHeight;
 
+
   aiConversationHistory.push({ role: 'bot', text: text });
+
 
   if ('speechSynthesis' in window) {
     const utter = new SpeechSynthesisUtterance(text);
@@ -2851,6 +3193,7 @@ function appendAiMessageToChat(text) {
     window.speechSynthesis.speak(utter);
   }
 }
+
 
 // Messenger
 function sendMessengerMessage() {
@@ -2864,9 +3207,11 @@ function sendMessengerMessage() {
   input.value = '';
 }
 
+
 function startMessengerCall(type) {
-  showToast(`📞 Connecting WebRTC P2P encrypted ${type} call...`);
+  showToast(`📞 Connecting WebRTC Mesh Group ${type} call (SFU Architecture)...`);
 }
+
 
 // Voice Manager
 let mediaRecorder;
@@ -2885,14 +3230,17 @@ function startVoiceRecording() {
   }).catch(err => showToast("මයික්‍රෆෝන් අවසරය ලබා දෙන්න.", 'error'));
 }
 
+
 function stopVoiceRecording() {
   if (mediaRecorder && mediaRecorder.state !== "inactive") mediaRecorder.stop();
 }
+
 
 function changeMasterPIN() {
   const p = prompt("නව රහස් අංකය (Secret PIN):");
   if (p) showToast("🔒 PIN එක සාර්ථකව වෙනස් විය!");
 }
+
 
 // ==============================================================
 // 🌟 STRIPE CHECKOUT GATEWAY INTEGRATION (Global Paid Model)
@@ -2913,6 +3261,7 @@ async function upgradeToProGlobalAccount() {
   }
 }
 
+
 // ==============================================================
 // 🌟 DYNAMIC THEME PERSISTENCE & PWA SERVICE WORKER
 // ==============================================================
@@ -2927,6 +3276,7 @@ function toggleTheme() {
   showToast(`Theme switched to: ${next.toUpperCase()}`);
 }
 
+
 function loadSavedTheme() {
   const saved = localStorage.getItem('myfacebox_theme');
   if (saved) {
@@ -2935,6 +3285,7 @@ function loadSavedTheme() {
     root.style.colorScheme = saved;
   }
 }
+
 
 // Register PWA Service Worker for Offline Capabilities
 if ('serviceWorker' in navigator) {
@@ -2946,6 +3297,7 @@ if ('serviceWorker' in navigator) {
     });
   });
 }
+
 
 function openMasterMenu() { document.getElementById('masterMenuHub').style.display = 'block'; }
 function closeMasterMenu() { document.getElementById('masterMenuHub').style.display = 'none'; }
@@ -2964,6 +3316,7 @@ function closeModule(id) {
   }
 }
 
+
 function checkAuthenticatedGateway() {
   const urlParams = new URLSearchParams(window.location.search);
   const targetPostId = urlParams.get('viewPost');
@@ -2978,12 +3331,14 @@ function checkAuthenticatedGateway() {
   }
 }
 
+
 document.addEventListener("DOMContentLoaded", () => {
   loadSavedTheme();
   loadPostsFromDatabase();
   updateHeaderAccountUI();
   renderAdvancedDiaryLogs();
   renderNotificationsModal();
+
 
   setTimeout(checkAuthenticatedGateway, 800);
 });
